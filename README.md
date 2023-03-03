@@ -90,13 +90,6 @@ Override func viewDidLoad(){
 }
 ```
 
-4. Add this new subclass to AndroidManifest.xml" inside <application> tag: - `[AndroidManifest.xml]`
-```swift
-<application
-    android:name=".AppylarApplication"
-    ...
-```
-
 # Step 3: Add BannerView to the application
 
 1. To integrate the BannerView component in your design prepare a view from storyboard and of BannerView type, prefer below snippet:
