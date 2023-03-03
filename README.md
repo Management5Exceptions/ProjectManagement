@@ -180,8 +180,8 @@ class ViewController: UIViewController{
 2. For design:
 
 ```swift
-Import UIKit
-Import Appylar_SDK_iOS
+import UIKit
+import Appylar
 
 class ViewController: UIViewController {
 	func setUI() {
