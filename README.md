@@ -25,11 +25,11 @@ Import Appylar
 # Step 2: Setup the configuration for your App and Listeners
 
 
-1. Create an extension of ViewController(), override its viewDidLoad() method, and implement the `AdEventListener` protocol. You can, of course, use your Application subclass if you already have one in your project.
+1. Create an extension of UIViewController(), override its viewDidLoad() method, and implement the `AdEventListener` protocol. You can, of course, use your Application subclass if you already have one in your project.
 
 ```swift
-Import UIKit
-Import Appylar
+import UIKit
+import Appylar
 
 class ViewController: UIViewController{
       	Override func viewDidLoad(){
@@ -53,8 +53,8 @@ extension ViewController: AdEventListener {
 
 2. Initialize SDK with configuration:
 ```swift
-Import UIKit
-Import Appylar
+import UIKit
+import Appylar
 
 class ViewController: UIViewController{
       	Override func viewDidLoad(){
@@ -209,8 +209,8 @@ class ViewController: UIViewController {
 3.  Implements for both the types:
 
 ```swift
-Import UIKit
-Import Appylar
+import UIKit
+import Appylar
 
 class ViewController: UIViewController { 
     	@IBAction func btnBannerositionTopDidTapped(_ sender: UIButton) {
