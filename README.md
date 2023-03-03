@@ -109,7 +109,7 @@ func onLoadAds() {
 3. Check Ad availability and show the Ad.
 
 
-![Banner View Image](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/ShowBanner.png)
+![Banner View Image](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/BannerView.png)
 
 
 ```swift
