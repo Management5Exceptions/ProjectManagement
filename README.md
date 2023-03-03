@@ -1,10 +1,10 @@
-# Applylar IOS SDK Integration
+# Applylar iOS SDK Integration
 
-Appylar library for iOS is a lightweight and easy-to-use Ad integration SDK provided by Appylar. SDK enables developers to integrate Appylar Ads in any type of iOS application.
+Appylar library for iOS is a lightweight and easy-to-use Ad integration SDK provided by Appylar. The SDK enables developers to integrate Appylar Ads in any type of iOS application.
 
-Appylar provides several types of Ads and enables you to set Ads wherever you want in the application.
+Appylar provides several types of Ads and enables you to place Ads wherever you want in the application.
 
-The Ads provided by Appylar are like:
+The Ads provided by Appylar are:
  - Banners
  - Interstitials
  
@@ -14,7 +14,7 @@ The Ads provided by Appylar are like:
 # Step 1: Add Appylar to your Gradle
 
 Make sure `Cocoapods` is available in your project's root file(ViewController).
-Then import the class in your view controller
+Then import the class in your ViewController.
 
 ```swift
 Import UIKit
@@ -24,7 +24,8 @@ Import Appylar
 
 # Step 2: Setup the configuration for your App and Listeners
 
-1. Create extension of View Controller(), override it's viewDidLoad() method and implement `AdEventListener` protocol. You can, of course, use your Application subclass, if you already have one in your project.
+
+1. Create an extension of ViewController(), override its viewDidLoad() method, and implement the `AdEventListener` protocol. You can, of course, use your Application subclass if you already have one in your project.
 
 ```swift
 Import UIKit
@@ -62,16 +63,16 @@ class ViewController: UIViewController{
             	//Here ‘adeventlister’ is a variable of AdEventListener
            	//Initialization
            	Appylar.initializeWithApiKey(testmode: true // ‘True’ for development and ‘False’ for production,                         
-          	app_Key: "<YOUR_APP_KEY>"?? “” //APP KEY provide by console for Development use    ["OwDmESooYtY2kNPotIuhiQ"] ,
-           	app_id: "", 
- 		orientations: [Orientation.PORTRAIT, Orientation.LANDSCAPE] 	//Supported orientations for Ads, 
-		Adtypes: (AdType.BANNER, AdType.INTERSTITIAL)	//What type of Ads you want to integrate)
+          		app_Key: "<YOUR_APP_KEY>"?? “”, //APP KEY provided by console for Development use    ["OwDmESooYtY2kNPotIuhiQ"]
+           		app_id: "", 
+ 			orientations: [Orientation.PORTRAIT, Orientation.LANDSCAPE], 	//Supported orientations for Ads 
+			Adtypes: (AdType.BANNER, AdType.INTERSTITIAL)	//Types of Ads to integrate )
           }
 }
 
 ```
 
-3. There is another method available for parameters customization:
+3. Another method is available for parameter customization:
 ```swift
 Override func viewDidLoad(){
    	super.viewDidLoad()  
@@ -79,7 +80,7 @@ Override func viewDidLoad(){
       	//Here ‘adeventlister’ is a variable of AdEventListener
 	//Initialization
      	Appylar.setParameters(bannerHeight: selectedHeightOfBanner // Height is given by user [“50”,”90],
- 	ageRestriction: SelectedAge //Age is given by user[“12”,”15”,”18”] )    
+ 		ageRestriction: SelectedAge //Age is given by user[“12”,”15”,”18”] )    
      }
 ```
 
