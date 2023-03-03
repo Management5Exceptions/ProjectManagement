@@ -1,6 +1,6 @@
 # Applylar iOS SDK Integration
 
-Appylar library for iOS is a lightweight and easy-to-use Ad integration SDK provided by Appylar. The SDK enables developers to integrate Appylar Ads in any type of iOS application.
+Appylar framework for iOS is a lightweight and easy-to-use Ad integration SDK provided by Appylar. The SDK enables developers to integrate Appylar Ads in any type of iOS application.
 
 Appylar provides several types of Ads and enables you to place Ads wherever you want in the application.
 
@@ -11,7 +11,7 @@ The Ads provided by Appylar are:
 ## General Requirements
  - Targeted versions must be iOS 12.0 and later.
  
-# Step 1: Add Appylar to your Gradle
+# Step 1: Add Appylar to your Bundle
 
 Make sure `Pods` is available in your project's directory.
 Then import the class in your UIViewController Class
@@ -66,7 +66,8 @@ class ViewController: UIViewController{
           		app_Key: "<YOUR_APP_KEY>"?? “”, //APP KEY provided by console for Development use    ["OwDmESooYtY2kNPotIuhiQ"]
            		app_id: "", 
  			orientations: [Orientation.PORTRAIT, Orientation.LANDSCAPE], 	//Supported orientations for Ads 
-		        Adtypes: [AdType.BANNER, AdType.INTERSTITIAL]	//Types of Ads to integrate )
+		        Adtypes: [AdType.BANNER, AdType.INTERSTITIAL]	//Types of Ads to integrate 
+			)
           }
 }
 
@@ -89,6 +90,10 @@ Override func viewDidLoad(){
 1. To integrate the BannerView component in your design prepare a view from storyboard and of BannerView type, prefer below snippet:
 
 ![Banner View Image](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/BannerView.png)
+    Steps:
+    1. Drag a view from library.
+    2. At there attribute inspector assign BannerView as a class and Appylar in module.
+    3. Create there outlet of type BannerView.
 ```swift
 @IBOutlet weak var bannerView: BannerView!
 ```	 
@@ -262,7 +267,14 @@ class ViewController: UIViewController {
 }
 extension ViewController : AdEventListener {
 		
- 	func onNoAd() {
+ 	func onInitialized(token: String) {
+                 AddLogsToTextView(logs: "Received session token:- \(token)")
+        }
+    
+        func onError(description: String) {
+                AddLogsToTextView(logs: "Error:- \(description)")
+        }
+	func onNoAd() {
         	AddLogsToTextView(logs: "No Ads in buffer")
     	}
     
