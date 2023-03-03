@@ -1,7 +1,5 @@
 # Applylar IOS SDK Integration
 
-![Code Snippet](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/Screenshot%202023-03-03%20at%2011.56.12%20AM.png)
-
 Appylar library for iOS is a lightweight and easy-to-use Ad integration SDK provided by Appylar. SDK enables developers to integrate Appylar Ads in any type of iOS application.
 
 Appylar provides several types of Ads and enables you to set Ads wherever you want in the application.
