@@ -66,7 +66,7 @@ class ViewController: UIViewController{
           		app_Key: "<YOUR_APP_KEY>"?? “”, //APP KEY provided by console for Development use    ["OwDmESooYtY2kNPotIuhiQ"]
            		app_id: "", 
  			orientations: [Orientation.PORTRAIT, Orientation.LANDSCAPE], 	//Supported orientations for Ads 
-			Adtypes: (AdType.BANNER, AdType.INTERSTITIAL)	//Types of Ads to integrate )
+		        Adtypes: [AdType.BANNER, AdType.INTERSTITIAL]	//Types of Ads to integrate )
           }
 }
 
@@ -171,7 +171,7 @@ class ViewController: UIViewController{
          	app_Key: "<YOUR_APP_KEY>"?? “” //APP KEY provide by console for Development use    ["OwDmESooYtY2kNPotIuhiQ"] ,
            	app_id: "", 
  		orientations: [Orientation.PORTRAIT, Orientation.LANDSCAPE] 	//Supported orientations for Ads, 
-		Adtypes: (AdType.BANNER, AdType.INTERSTITIAL)	//What type of Ads you want to integrate )
+		Adtypes: [AdType.BANNER, AdType.INTERSTITIAL]	//What type of Ads you want to integrate )
      	}
 }
 
