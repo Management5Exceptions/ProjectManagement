@@ -13,8 +13,8 @@ The Ads provided by Appylar are:
  
 # Step 1: Add Appylar to your Gradle
 
-Make sure `Pods` is available in your project's root file(ViewController).
-Then import the class in your ViewController.
+Make sure `Pods` is available in your project's directory.
+Then import the class in your UIViewController Class
 
 ```swift
 import UIKit
