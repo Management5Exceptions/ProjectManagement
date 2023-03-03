@@ -13,13 +13,6 @@ The Ads provided by Appylar are like:
 ## General Requirements
  - Targeted versions must be iOS 12.0 and later.
  
-# Usage
-The installation guide will lead you through the following steps:
- - <a href="https://github.com/5exceptions-rakeshdiwan/mine-personal/new/main?readme=1#appylar-android-sdk">Add Appylar to Gradle</a>
- - <a href="https://github.com/5exceptions-rakeshdiwan/mine-personal/new/main?readme=1#appylar-android-sdk">Setup the SDK configuration</a>
- - <a href="https://github.com/5exceptions-rakeshdiwan/mine-personal/new/main?readme=1#appylar-android-sdk">Add BannerView to the application</a>
- - <a href="https://github.com/5exceptions-rakeshdiwan/mine-personal/new/main?readme=1#appylar-android-sdk">Add Interstitial to the application</a>
-
 # Step 1: Add Appylar to your Gradle
 
 Make sure `Cocoapods` is available in your project's root file(ViewController).
@@ -27,7 +20,7 @@ Then import the class in your view controller
 
 ```swift
 Import UIKit
-Import Appylar_SDK_iOS
+Import Appylar
 ```
 
 
@@ -37,7 +30,7 @@ Import Appylar_SDK_iOS
 
 ```swift
 Import UIKit
-Import Appylar_SDK_iOS
+Import Appylar
 
 class viewController: UIViewController{
       	Override func viewDidLoad(){
@@ -46,7 +39,7 @@ class viewController: UIViewController{
             	//Here ‘adeventlister’ is a variable of AdEventListener
             	//Initialization
             	……
-     }
+         }
 }
 extension ViewController: AdEventListener {
     	func onInitialized(token: String) {
@@ -62,9 +55,9 @@ extension ViewController: AdEventListener {
 2. Initialize SDK with configuration:
 ```swift
 Import UIKit
-Import Appylar_SDK_iOS
+Import Appylar
 
-class viewController: UIViewController{
+class ViewController: UIViewController{
       	Override func viewDidLoad(){
 		super.viewDidLoad()  
             	Appylar.adeventlistener = self //Attach callback listeners for SDK before initialization
@@ -75,7 +68,7 @@ class viewController: UIViewController{
            	app_id: "", 
  		orientations: [Orientation.PORTRAIT, Orientation.LANDSCAPE] 	//Supported orientations for Ads, 
 		Adtypes: (AdType.BANNER, AdType.INTERSTITIAL)	//What type of Ads you want to integrate)
-     }
+          }
 }
 
 ```
@@ -89,7 +82,7 @@ Override func viewDidLoad(){
 	//Initialization
      	Appylar.setParameters(bannerHeight: selectedHeightOfBanner // Height is given by user [“50”,”90],
  	ageRestriction: SelectedAge //Age is given by user[“12”,”15”,”18”] )    
-}
+     }
 ```
 
 # Step 3: Add BannerView to the application
@@ -105,10 +98,10 @@ Override func viewDidLoad(){
 ```swift
 func onNoad(){
     	//Callback for when there is no Ad to show.  
-}
+    }
 func onLoadAds() {
     	//Callback for when Ads loads successfully.
-}
+    }
 ```
 
 3. Check Ad availability and show the Ad.
@@ -118,16 +111,16 @@ if Appylar.canShowAd(Adtype: .banner) == true {
      	if self.selectedPosition == .top {              
   	self.topBannerView.showAds(position: .top)               
  	self.constraintHeightTopBannerView.constant = CGFloat(self.selectedHeightOfBanner)	
-}
-} else {
-      	self.onNoad() // if canShowAd function returns false then a onNoad event is fired.
-}
+        }
+      } else {
+      	  self.onNoad() // if canShowAd function returns false then a onNoad event is fired.
+      }
 ```
 
 4. For hiding the banner at the run time:
 
 ```swift
-bannerView.hideBanner()
+   bannerView.hideBanner()
 ```
 
 # Step 4: Add Interstitial to the application
@@ -136,14 +129,14 @@ bannerView.hideBanner()
 ```swift
 func onNoad(){
     	//Callback for when there is no Ad to show.  
-}
+   }
 func onLoadAds() {
     	//Callback for when Ads loads successfully.
-}
+   }
 func onInterstitialClosed()
 {
     	//Callback for close event of interstitial
-}
+   }
 ```	
 
 2. Check Ad availablity and show the Ad.
@@ -154,9 +147,9 @@ if  Appylar.canShowAd(Adtype: .interstitial) == true {
    	let <Your_Controller_Name> = storyBoard.instantiateViewController(withIdentifier: "<Your_Controller_Identifier>") as! <Your_Controller_Name>
       	<Your_Controller_Name>.restrictRotation = appDelegate.restrictRotation ?? .all
         self.navigationController?.pushViewController(<Your_Controller_Name>, animated: false)
-} else {
+        } else {
    	self.onNoad() // if canShowAd function returns false then a onNoad event is fired.
-}
+    }
 ```
 
 # Sample Codes
@@ -165,7 +158,7 @@ if  Appylar.canShowAd(Adtype: .interstitial) == true {
 	
 ```swift
 import UIKit
-import Appylar_SDK_iOS
+import Appylar
 		
 class viewController: UIViewController{
     	Override func viewDidLoad() {
@@ -208,7 +201,7 @@ class viewController: UIViewController {
         	self.scrollview.layer.borderWidth = 2
         	self.scrollview.layer.cornerRadius = 5
         	setValueInArrays()
-    	}
+    	        }
 }
 ```
 
@@ -216,36 +209,16 @@ class viewController: UIViewController {
 
 ```swift
 Import UIKit
-Import Appylar_SDK_iOS
+Import Appylar
 
 class ViewController: UIViewController { 
-	@IBAction func btnAdtypeBannerDidTapped(_ sender: UIButton) {
-        	self.btnAdTypeBanner.isSelected = !self.btnAdTypeBanner.isSelected
-        	setValueInArrays()
-     	}
-    
-    	@IBAction func btnAdtypeInterstitialDidTapped(_ sender: UIButton) {
-        	self.btnAdTypeInterstitial.isSelected = !self.btnAdTypeInterstitial.isSelected
-        	setValueInArrays()
-    	}
-    
-    	@IBAction func btnOrientationtypePortraitDidTapped(_ sender: UIButton){
-        	self.btnOrientationPortrait.isSelected = !self.btnOrientationPortrait.isSelected
-        	setValueInArrays()
-    	}
-    
-    	@IBAction func btnOrientationtypeLandscapeDidTapped(_ sender: UIButton) {
-        	self.btnOrientationLandScape.isSelected = !self.btnOrientationLandScape.isSelected
-        	setValueInArrays()
-    	}
-    
     	@IBAction func btnBannerositionTopDidTapped(_ sender: UIButton) {
         	btnBannerPositionTop.isSelected = true
         	self.constraintHeightBottomBannerView.constant = 0
         	self.bottomBannerView.hideBanner()
         	btnBannerPostionBottom.isSelected = false
         	setValueInArrays()
-    	}
+    	  }
     
     	@IBAction func btnBannerositionBottomDidTapped(_ sender: UIButton) {
 		btnBannerPostionBottom.isSelected = true
@@ -253,24 +226,15 @@ class ViewController: UIViewController {
         	self.topBannerView.hideBanner()
         	btnBannerPositionTop.isSelected = false
         	setValueInArrays()
-    	}
-    
-    	@IBAction func btnSelectHeightDidTapped(_ sender: UIButton) {
-        	showActionSheetWithValues(title: "Select Height", message: "", values: ["50", "90"], forHeight: true)
-    	}
-    
-    	@IBAction func btnSelectAgeDidTapped(_ sender: UIButton) {
-        	let ageArr = ["12","15","18"]
-        	showActionSheetWithValues(title: "Select Age", message: "", values: ageArr, forHeight: false)
-    	}
-    
+    	  }
+        
     	@IBAction func btnInitDidTapped(_ sender: UIButton) {
-            	Appylar.initializeWithApiKey(testmode: true, app_Key: self.txtfieldApiKey.text ?? "", app_id: "", orientations: self.selectedOrientations, Adtypes: self.selectedAdTypes)
-    	}
+            	Appylar.initializeWithApiKey(testmode: true, app_Key: self.txtfieldApiKey.text ?? "", app_id: "", orientations: self.selectedOrientations,                 Adtypes: self.selectedAdTypes)
+    	 }
     
     	@IBAction func btnShowBannerDidTapped(_ sender: UIButton) {
         	showBanner()
-    	}
+    	  }
     
     	@IBAction func btnHideBannerDidTapped(_ sender: UIButton) {
         	self.topBannerView.hideBanner()
@@ -278,7 +242,7 @@ class ViewController: UIViewController {
         	self.constraintHeightBottomBannerView.constant = 0
         	self.constraintHeightTopBannerView.constant = 0
         	self.view.layoutIfNeeded()
-    	}
+    	  }
     
     	@IBAction func btnShowIntersitialDidTapped(_ sender: UIButton) {
 
@@ -287,10 +251,10 @@ class ViewController: UIViewController {
             		let nextViewController = storyBoard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
             		nextViewController.restrictRotation = appDelegate.restrictRotation ?? .all
             		self.navigationController?.pushViewController(nextViewController, animated: false)
-        	} else {
-            		self.onNoAd()
-        	}
-    	}
+        	        } else {
+            		  self.onNoAd()
+        	        }
+    	            }
 }
 extension ViewController : AdEventListener {
 		
