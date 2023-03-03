@@ -109,7 +109,7 @@ func onLoadAds() {
 3. Check Ad availability and show the Ad.
 
 
-![Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/ShowBanner.png)
+![Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/ClickShowBanner.png)
 
 
 ```swift
@@ -130,6 +130,8 @@ if Appylar.canShowAd(Adtype: .banner) == true {
 ```
 
 # Step 4: Add Interstitial to the application
+
+![Hide Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/HideBanner.png)
 
 1. Implement callback listeners for Interstitial.
 ```swift
