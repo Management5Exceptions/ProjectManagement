@@ -146,6 +146,10 @@ func onInterstitialClosed() {
 
 2. Check Ad availablity and show the Ad.
 
+
+![Interstitial Ad](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/ShowInterstitial.png)
+
+
 ```swift
 if  Appylar.canShowAd(Adtype: .interstitial) == true {
    	let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
