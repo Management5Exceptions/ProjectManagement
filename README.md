@@ -9,9 +9,9 @@ The Ads provided by Appylar are:
  - Interstitials
  
 ## General Requirements
- - Targeted versions must be iOS 12.0 and later.
+ - Minimum targeted version must be iOS 12.0 and later.
  
-# Step 1: Add Appylar to your Bundle
+# Step 1: Add Appylar to your project bundle
 
 Make sure `Pods` is available in your project's directory.
 Then import the class in your UIViewController Class
@@ -90,10 +90,13 @@ Override func viewDidLoad(){
 1. To integrate the BannerView component in your design prepare a view from storyboard and of BannerView type, prefer below snippet:
 
 ![Banner View Image](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/BannerView.png)
-    Steps:
-    1. Drag a view from library.
-    2. At there attribute inspector assign BannerView as a class and Appylar in module.
-    3. Create there outlet of type BannerView.
+   
+Steps:
+   
+  1. Drag a view from library.
+  2. At there attribute inspector assign `BannerView` as a class and `Appylar` in module.
+  3. Create there outlet of type BannerView.
+
 ```swift
 @IBOutlet weak var bannerView: BannerView!
 ```	 
@@ -113,14 +116,14 @@ func onLoadAds() {
 
 ![Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/ClickShowBanner.png)
 ```swift
-if Appylar.canShowAd(Adtype: .banner) == true {  
+   if Appylar.canShowAd(Adtype: .banner) == true {  
      	if self.selectedPosition == .top {              
-  	self.topBannerView.showAds(position: .top)               
- 	self.constraintHeightTopBannerView.constant = CGFloat(self.selectedHeightOfBanner)	
-        }
-      	} else {
+  	    self.topBannerView.showAds(position: .top)               
+ 	    self.constraintHeightTopBannerView.constant = CGFloat(self.selectedHeightOfBanner)	
+            }
+    }else {
       	  self.onNoad() // if canShowAd function returns false then a onNoad event is fired.
-}
+   }
 ```
 
 4. For hiding the banner at the run time:
