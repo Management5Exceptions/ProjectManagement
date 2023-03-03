@@ -1,0 +1,2620 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS"
+      },
+      {
+        "kind": "Import",
+        "name": "SafariServices",
+        "printedName": "SafariServices",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdViewController",
+        "printedName": "AdViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "orientationType",
+            "printedName": "orientationType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIInterfaceOrientationMask?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIInterfaceOrientationMask",
+                    "printedName": "UIKit.UIInterfaceOrientationMask",
+                    "usr": "c:@E@UIInterfaceOrientationMask"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Appylar_SDK_iOS16AdViewControllerC15orientationTypeSo26UIInterfaceOrientationMaskVSgvp",
+            "mangledName": "$s15Appylar_SDK_iOS16AdViewControllerC15orientationTypeSo26UIInterfaceOrientationMaskVSgvp",
+            "moduleName": "Appylar_SDK_iOS",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIInterfaceOrientationMask?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIInterfaceOrientationMask",
+                        "printedName": "UIKit.UIInterfaceOrientationMask",
+                        "usr": "c:@E@UIInterfaceOrientationMask"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Appylar_SDK_iOS16AdViewControllerC15orientationTypeSo26UIInterfaceOrientationMaskVSgvg",
+                "mangledName": "$s15Appylar_SDK_iOS16AdViewControllerC15orientationTypeSo26UIInterfaceOrientationMaskVSgvg",
+                "moduleName": "Appylar_SDK_iOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIInterfaceOrientationMask?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIInterfaceOrientationMask",
+                        "printedName": "UIKit.UIInterfaceOrientationMask",
+                        "usr": "c:@E@UIInterfaceOrientationMask"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Appylar_SDK_iOS16AdViewControllerC15orientationTypeSo26UIInterfaceOrientationMaskVSgvs",
+                "mangledName": "$s15Appylar_SDK_iOS16AdViewControllerC15orientationTypeSo26UIInterfaceOrientationMaskVSgvs",
+                "moduleName": "Appylar_SDK_iOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Appylar_SDK_iOS16AdViewControllerC15orientationTypeSo26UIInterfaceOrientationMaskVSgvM",
+                "mangledName": "$s15Appylar_SDK_iOS16AdViewControllerC15orientationTypeSo26UIInterfaceOrientationMaskVSgvM",
+                "moduleName": "Appylar_SDK_iOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Appylar_SDK_iOS@objc(cs)AdViewController(im)viewDidLoad",
+            "mangledName": "$s15Appylar_SDK_iOS16AdViewControllerC11viewDidLoadyyF",
+            "moduleName": "Appylar_SDK_iOS",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "supportedInterfaceOrientations",
+            "printedName": "supportedInterfaceOrientations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientationMask",
+                "printedName": "UIKit.UIInterfaceOrientationMask",
+                "usr": "c:@E@UIInterfaceOrientationMask"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Appylar_SDK_iOS@objc(cs)AdViewController(py)supportedInterfaceOrientations",
+            "mangledName": "$s15Appylar_SDK_iOS16AdViewControllerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvp",
+            "moduleName": "Appylar_SDK_iOS",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "supportedInterfaceOrientations",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIInterfaceOrientationMask",
+                    "printedName": "UIKit.UIInterfaceOrientationMask",
+                    "usr": "c:@E@UIInterfaceOrientationMask"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Appylar_SDK_iOS@objc(cs)AdViewController(im)supportedInterfaceOrientations",
+                "mangledName": "$s15Appylar_SDK_iOS16AdViewControllerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvg",
+                "moduleName": "Appylar_SDK_iOS",
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "supportedInterfaceOrientations",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidAppear",
+            "printedName": "viewDidAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Appylar_SDK_iOS@objc(cs)AdViewController(im)viewDidAppear:",
+            "mangledName": "$s15Appylar_SDK_iOS16AdViewControllerC13viewDidAppearyySbF",
+            "moduleName": "Appylar_SDK_iOS",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showInterstitialAds",
+            "printedName": "showInterstitialAds()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Appylar_SDK_iOS16AdViewControllerC19showInterstitialAdsyyF",
+            "mangledName": "$s15Appylar_SDK_iOS16AdViewControllerC19showInterstitialAdsyyF",
+            "moduleName": "Appylar_SDK_iOS",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdViewController",
+                "printedName": "Appylar_SDK_iOS.AdViewController",
+                "usr": "c:@M@Appylar_SDK_iOS@objc(cs)AdViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Appylar_SDK_iOS@objc(cs)AdViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s15Appylar_SDK_iOS16AdViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "Appylar_SDK_iOS",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Appylar_SDK_iOS.AdViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdViewController",
+                    "printedName": "Appylar_SDK_iOS.AdViewController",
+                    "usr": "c:@M@Appylar_SDK_iOS@objc(cs)AdViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Appylar_SDK_iOS@objc(cs)AdViewController(im)initWithCoder:",
+            "mangledName": "$s15Appylar_SDK_iOS16AdViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "Appylar_SDK_iOS",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "userContentController",
+            "printedName": "userContentController(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKUserContentController",
+                "printedName": "WebKit.WKUserContentController",
+                "usr": "c:objc(cs)WKUserContentController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKScriptMessage",
+                "printedName": "WebKit.WKScriptMessage",
+                "usr": "c:objc(cs)WKScriptMessage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Appylar_SDK_iOS@objc(cs)AdViewController(im)userContentController:didReceiveScriptMessage:",
+            "mangledName": "$s15Appylar_SDK_iOS16AdViewControllerC011userContentF0_10didReceiveySo06WKUserhF0C_So15WKScriptMessageCtF",
+            "moduleName": "Appylar_SDK_iOS",
+            "objc_name": "userContentController:didReceiveScriptMessage:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:createWebViewWith:for:windowFeatures:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WebKit.WKWebView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebViewConfiguration",
+                "printedName": "WebKit.WKWebViewConfiguration",
+                "usr": "c:objc(cs)WKWebViewConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWindowFeatures",
+                "printedName": "WebKit.WKWindowFeatures",
+                "usr": "c:objc(cs)WKWindowFeatures"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Appylar_SDK_iOS@objc(cs)AdViewController(im)webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
+            "mangledName": "$s15Appylar_SDK_iOS16AdViewControllerC03webE0_09createWebE4With3for14windowFeaturesSo05WKWebE0CSgAI_So0nE13ConfigurationCSo18WKNavigationActionCSo08WKWindowM0CtF",
+            "moduleName": "Appylar_SDK_iOS",
+            "objc_name": "webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Appylar_SDK_iOS@objc(cs)AdViewController",
+        "mangledName": "$s15Appylar_SDK_iOS16AdViewControllerC",
+        "moduleName": "Appylar_SDK_iOS",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BannerPosition",
+        "printedName": "BannerPosition",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "top",
+            "printedName": "top",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Appylar_SDK_iOS.BannerPosition.Type) -> Appylar_SDK_iOS.BannerPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BannerPosition",
+                    "printedName": "Appylar_SDK_iOS.BannerPosition",
+                    "usr": "s:15Appylar_SDK_iOS14BannerPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Appylar_SDK_iOS.BannerPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BannerPosition",
+                        "printedName": "Appylar_SDK_iOS.BannerPosition",
+                        "usr": "s:15Appylar_SDK_iOS14BannerPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15Appylar_SDK_iOS14BannerPositionO3topyA2CmF",
+            "mangledName": "$s15Appylar_SDK_iOS14BannerPositionO3topyA2CmF",
+            "moduleName": "Appylar_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "bottom",
+            "printedName": "bottom",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Appylar_SDK_iOS.BannerPosition.Type) -> Appylar_SDK_iOS.BannerPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BannerPosition",
+                    "printedName": "Appylar_SDK_iOS.BannerPosition",
+                    "usr": "s:15Appylar_SDK_iOS14BannerPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Appylar_SDK_iOS.BannerPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BannerPosition",
+                        "printedName": "Appylar_SDK_iOS.BannerPosition",
+                        "usr": "s:15Appylar_SDK_iOS14BannerPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15Appylar_SDK_iOS14BannerPositionO6bottomyA2CmF",
+            "mangledName": "$s15Appylar_SDK_iOS14BannerPositionO6bottomyA2CmF",
+            "moduleName": "Appylar_SDK_iOS"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerPosition",
+                "printedName": "Appylar_SDK_iOS.BannerPosition",
+                "usr": "s:15Appylar_SDK_iOS14BannerPositionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerPosition",
+                "printedName": "Appylar_SDK_iOS.BannerPosition",
+                "usr": "s:15Appylar_SDK_iOS14BannerPositionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Appylar_SDK_iOS14BannerPositionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15Appylar_SDK_iOS14BannerPositionO2eeoiySbAC_ACtFZ",
+            "moduleName": "Appylar_SDK_iOS",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Appylar_SDK_iOS14BannerPositionO9hashValueSivp",
+            "mangledName": "$s15Appylar_SDK_iOS14BannerPositionO9hashValueSivp",
+            "moduleName": "Appylar_SDK_iOS",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Appylar_SDK_iOS14BannerPositionO9hashValueSivg",
+                "mangledName": "$s15Appylar_SDK_iOS14BannerPositionO9hashValueSivg",
+                "moduleName": "Appylar_SDK_iOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Appylar_SDK_iOS14BannerPositionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s15Appylar_SDK_iOS14BannerPositionO4hash4intoys6HasherVz_tF",
+            "moduleName": "Appylar_SDK_iOS",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15Appylar_SDK_iOS14BannerPositionO",
+        "mangledName": "$s15Appylar_SDK_iOS14BannerPositionO",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Appylar",
+        "printedName": "Appylar",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "canShowAd",
+            "printedName": "canShowAd(Adtype:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdType",
+                "printedName": "Appylar_SDK_iOS.AdType",
+                "usr": "s:15Appylar_SDK_iOS6AdTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Appylar_SDK_iOS0A0C9canShowAd6AdtypeSbAA0F4TypeO_tFZ",
+            "mangledName": "$s15Appylar_SDK_iOS0A0C9canShowAd6AdtypeSbAA0F4TypeO_tFZ",
+            "moduleName": "Appylar_SDK_iOS",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "adeventlistener",
+            "printedName": "adeventlistener",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Appylar_SDK_iOS.AdEventListener?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdEventListener",
+                    "printedName": "Appylar_SDK_iOS.AdEventListener",
+                    "usr": "s:15Appylar_SDK_iOS15AdEventListenerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Appylar_SDK_iOS0A0C15adeventlistenerAA15AdEventListener_pSgvpZ",
+            "mangledName": "$s15Appylar_SDK_iOS0A0C15adeventlistenerAA15AdEventListener_pSgvpZ",
+            "moduleName": "Appylar_SDK_iOS",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Appylar_SDK_iOS.AdEventListener?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdEventListener",
+                        "printedName": "Appylar_SDK_iOS.AdEventListener",
+                        "usr": "s:15Appylar_SDK_iOS15AdEventListenerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Appylar_SDK_iOS0A0C15adeventlistenerAA15AdEventListener_pSgvgZ",
+                "mangledName": "$s15Appylar_SDK_iOS0A0C15adeventlistenerAA15AdEventListener_pSgvgZ",
+                "moduleName": "Appylar_SDK_iOS",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Appylar_SDK_iOS.AdEventListener?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdEventListener",
+                        "printedName": "Appylar_SDK_iOS.AdEventListener",
+                        "usr": "s:15Appylar_SDK_iOS15AdEventListenerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Appylar_SDK_iOS0A0C15adeventlistenerAA15AdEventListener_pSgvsZ",
+                "mangledName": "$s15Appylar_SDK_iOS0A0C15adeventlistenerAA15AdEventListener_pSgvsZ",
+                "moduleName": "Appylar_SDK_iOS",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Appylar_SDK_iOS0A0C15adeventlistenerAA15AdEventListener_pSgvMZ",
+                "mangledName": "$s15Appylar_SDK_iOS0A0C15adeventlistenerAA15AdEventListener_pSgvMZ",
+                "moduleName": "Appylar_SDK_iOS",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initializeWithApiKey",
+            "printedName": "initializeWithApiKey(testmode:app_Key:app_id:orientations:Adtypes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Appylar_SDK_iOS.AdOrientation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdOrientation",
+                    "printedName": "Appylar_SDK_iOS.AdOrientation",
+                    "usr": "s:15Appylar_SDK_iOS13AdOrientationO"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Appylar_SDK_iOS.AdType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdType",
+                    "printedName": "Appylar_SDK_iOS.AdType",
+                    "usr": "s:15Appylar_SDK_iOS6AdTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Appylar_SDK_iOS0A0C20initializeWithApiKey8testmode04app_G00I3_id12orientations7AdtypesySb_S2SSayAA13AdOrientationOGSayAA0M4TypeOGtFZ",
+            "mangledName": "$s15Appylar_SDK_iOS0A0C20initializeWithApiKey8testmode04app_G00I3_id12orientations7AdtypesySb_S2SSayAA13AdOrientationOGSayAA0M4TypeOGtFZ",
+            "moduleName": "Appylar_SDK_iOS",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setParameters",
+            "printedName": "setParameters(bannerHeight:ageRestriction:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Appylar_SDK_iOS0A0C13setParameters12bannerHeight14ageRestrictionySi_SitFZ",
+            "mangledName": "$s15Appylar_SDK_iOS0A0C13setParameters12bannerHeight14ageRestrictionySi_SitFZ",
+            "moduleName": "Appylar_SDK_iOS",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Appylar_SDK_iOS@objc(cs)Appylar",
+        "mangledName": "$s15Appylar_SDK_iOS0A0C",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdOrientation",
+        "printedName": "AdOrientation",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "portrait",
+            "printedName": "portrait",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Appylar_SDK_iOS.AdOrientation.Type) -> Appylar_SDK_iOS.AdOrientation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdOrientation",
+                    "printedName": "Appylar_SDK_iOS.AdOrientation",
+                    "usr": "s:15Appylar_SDK_iOS13AdOrientationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Appylar_SDK_iOS.AdOrientation.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdOrientation",
+                        "printedName": "Appylar_SDK_iOS.AdOrientation",
+                        "usr": "s:15Appylar_SDK_iOS13AdOrientationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15Appylar_SDK_iOS13AdOrientationO8portraityA2CmF",
+            "mangledName": "$s15Appylar_SDK_iOS13AdOrientationO8portraityA2CmF",
+            "moduleName": "Appylar_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "landscape",
+            "printedName": "landscape",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Appylar_SDK_iOS.AdOrientation.Type) -> Appylar_SDK_iOS.AdOrientation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdOrientation",
+                    "printedName": "Appylar_SDK_iOS.AdOrientation",
+                    "usr": "s:15Appylar_SDK_iOS13AdOrientationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Appylar_SDK_iOS.AdOrientation.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdOrientation",
+                        "printedName": "Appylar_SDK_iOS.AdOrientation",
+                        "usr": "s:15Appylar_SDK_iOS13AdOrientationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15Appylar_SDK_iOS13AdOrientationO9landscapeyA2CmF",
+            "mangledName": "$s15Appylar_SDK_iOS13AdOrientationO9landscapeyA2CmF",
+            "moduleName": "Appylar_SDK_iOS"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Appylar_SDK_iOS.AdOrientation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdOrientation",
+                    "printedName": "Appylar_SDK_iOS.AdOrientation",
+                    "usr": "s:15Appylar_SDK_iOS13AdOrientationO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Appylar_SDK_iOS13AdOrientationO8rawValueACSgSS_tcfc",
+            "mangledName": "$s15Appylar_SDK_iOS13AdOrientationO8rawValueACSgSS_tcfc",
+            "moduleName": "Appylar_SDK_iOS",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Appylar_SDK_iOS13AdOrientationO8rawValueSSvp",
+            "mangledName": "$s15Appylar_SDK_iOS13AdOrientationO8rawValueSSvp",
+            "moduleName": "Appylar_SDK_iOS",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Appylar_SDK_iOS13AdOrientationO8rawValueSSvg",
+                "mangledName": "$s15Appylar_SDK_iOS13AdOrientationO8rawValueSSvg",
+                "moduleName": "Appylar_SDK_iOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15Appylar_SDK_iOS13AdOrientationO",
+        "mangledName": "$s15Appylar_SDK_iOS13AdOrientationO",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdType",
+        "printedName": "AdType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "banner",
+            "printedName": "banner",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Appylar_SDK_iOS.AdType.Type) -> Appylar_SDK_iOS.AdType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdType",
+                    "printedName": "Appylar_SDK_iOS.AdType",
+                    "usr": "s:15Appylar_SDK_iOS6AdTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Appylar_SDK_iOS.AdType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdType",
+                        "printedName": "Appylar_SDK_iOS.AdType",
+                        "usr": "s:15Appylar_SDK_iOS6AdTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15Appylar_SDK_iOS6AdTypeO6banneryA2CmF",
+            "mangledName": "$s15Appylar_SDK_iOS6AdTypeO6banneryA2CmF",
+            "moduleName": "Appylar_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "interstitial",
+            "printedName": "interstitial",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Appylar_SDK_iOS.AdType.Type) -> Appylar_SDK_iOS.AdType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdType",
+                    "printedName": "Appylar_SDK_iOS.AdType",
+                    "usr": "s:15Appylar_SDK_iOS6AdTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Appylar_SDK_iOS.AdType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdType",
+                        "printedName": "Appylar_SDK_iOS.AdType",
+                        "usr": "s:15Appylar_SDK_iOS6AdTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15Appylar_SDK_iOS6AdTypeO12interstitialyA2CmF",
+            "mangledName": "$s15Appylar_SDK_iOS6AdTypeO12interstitialyA2CmF",
+            "moduleName": "Appylar_SDK_iOS"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Appylar_SDK_iOS.AdType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdType",
+                    "printedName": "Appylar_SDK_iOS.AdType",
+                    "usr": "s:15Appylar_SDK_iOS6AdTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Appylar_SDK_iOS6AdTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s15Appylar_SDK_iOS6AdTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "Appylar_SDK_iOS",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Appylar_SDK_iOS6AdTypeO8rawValueSSvp",
+            "mangledName": "$s15Appylar_SDK_iOS6AdTypeO8rawValueSSvp",
+            "moduleName": "Appylar_SDK_iOS",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Appylar_SDK_iOS6AdTypeO8rawValueSSvg",
+                "mangledName": "$s15Appylar_SDK_iOS6AdTypeO8rawValueSSvg",
+                "moduleName": "Appylar_SDK_iOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15Appylar_SDK_iOS6AdTypeO",
+        "mangledName": "$s15Appylar_SDK_iOS6AdTypeO",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdEventListener",
+        "printedName": "AdEventListener",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onInitialized",
+            "printedName": "onInitialized(token:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Appylar_SDK_iOS15AdEventListenerP13onInitialized5tokenySS_tF",
+            "mangledName": "$s15Appylar_SDK_iOS15AdEventListenerP13onInitialized5tokenySS_tF",
+            "moduleName": "Appylar_SDK_iOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : Appylar_SDK_iOS.AdEventListener>",
+            "sugared_genericSig": "<Self where Self : Appylar_SDK_iOS.AdEventListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError(description:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Appylar_SDK_iOS15AdEventListenerP7onError11descriptionySS_tF",
+            "mangledName": "$s15Appylar_SDK_iOS15AdEventListenerP7onError11descriptionySS_tF",
+            "moduleName": "Appylar_SDK_iOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : Appylar_SDK_iOS.AdEventListener>",
+            "sugared_genericSig": "<Self where Self : Appylar_SDK_iOS.AdEventListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onNoAd",
+            "printedName": "onNoAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Appylar_SDK_iOS15AdEventListenerP04onNoD0yyF",
+            "mangledName": "$s15Appylar_SDK_iOS15AdEventListenerP04onNoD0yyF",
+            "moduleName": "Appylar_SDK_iOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : Appylar_SDK_iOS.AdEventListener>",
+            "sugared_genericSig": "<Self where Self : Appylar_SDK_iOS.AdEventListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onLoadAds",
+            "printedName": "onLoadAds()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Appylar_SDK_iOS15AdEventListenerP9onLoadAdsyyF",
+            "mangledName": "$s15Appylar_SDK_iOS15AdEventListenerP9onLoadAdsyyF",
+            "moduleName": "Appylar_SDK_iOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : Appylar_SDK_iOS.AdEventListener>",
+            "sugared_genericSig": "<Self where Self : Appylar_SDK_iOS.AdEventListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAdShown",
+            "printedName": "onAdShown(type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdType",
+                "printedName": "Appylar_SDK_iOS.AdType",
+                "usr": "s:15Appylar_SDK_iOS6AdTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Appylar_SDK_iOS15AdEventListenerP02onD5Shown4typeyAA0D4TypeO_tF",
+            "mangledName": "$s15Appylar_SDK_iOS15AdEventListenerP02onD5Shown4typeyAA0D4TypeO_tF",
+            "moduleName": "Appylar_SDK_iOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : Appylar_SDK_iOS.AdEventListener>",
+            "sugared_genericSig": "<Self where Self : Appylar_SDK_iOS.AdEventListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onInterstitialClosed",
+            "printedName": "onInterstitialClosed()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Appylar_SDK_iOS15AdEventListenerP20onInterstitialClosedyyF",
+            "mangledName": "$s15Appylar_SDK_iOS15AdEventListenerP20onInterstitialClosedyyF",
+            "moduleName": "Appylar_SDK_iOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : Appylar_SDK_iOS.AdEventListener>",
+            "sugared_genericSig": "<Self where Self : Appylar_SDK_iOS.AdEventListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15Appylar_SDK_iOS15AdEventListenerP",
+        "mangledName": "$s15Appylar_SDK_iOS15AdEventListenerP",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS"
+      },
+      {
+        "kind": "Import",
+        "name": "SafariServices",
+        "printedName": "SafariServices",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BannerView",
+        "printedName": "BannerView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "showAds",
+            "printedName": "showAds(position:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Appylar_SDK_iOS.BannerPosition?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BannerPosition",
+                    "printedName": "Appylar_SDK_iOS.BannerPosition",
+                    "usr": "s:15Appylar_SDK_iOS14BannerPositionO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Appylar_SDK_iOS10BannerViewC7showAds8positionyAA0D8PositionOSg_tF",
+            "mangledName": "$s15Appylar_SDK_iOS10BannerViewC7showAds8positionyAA0D8PositionOSg_tF",
+            "moduleName": "Appylar_SDK_iOS",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hideBanner",
+            "printedName": "hideBanner()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Appylar_SDK_iOS10BannerViewC04hideD0yyF",
+            "mangledName": "$s15Appylar_SDK_iOS10BannerViewC04hideD0yyF",
+            "moduleName": "Appylar_SDK_iOS",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "Appylar_SDK_iOS.BannerView",
+                "usr": "c:@M@Appylar_SDK_iOS@objc(cs)BannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Appylar_SDK_iOS@objc(cs)BannerView(im)initWithFrame:",
+            "mangledName": "$s15Appylar_SDK_iOS10BannerViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "Appylar_SDK_iOS",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Appylar_SDK_iOS.BannerView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BannerView",
+                    "printedName": "Appylar_SDK_iOS.BannerView",
+                    "usr": "c:@M@Appylar_SDK_iOS@objc(cs)BannerView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Appylar_SDK_iOS@objc(cs)BannerView(im)initWithCoder:",
+            "mangledName": "$s15Appylar_SDK_iOS10BannerViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "Appylar_SDK_iOS",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "userContentController",
+            "printedName": "userContentController(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKUserContentController",
+                "printedName": "WebKit.WKUserContentController",
+                "usr": "c:objc(cs)WKUserContentController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKScriptMessage",
+                "printedName": "WebKit.WKScriptMessage",
+                "usr": "c:objc(cs)WKScriptMessage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Appylar_SDK_iOS@objc(cs)BannerView(im)userContentController:didReceiveScriptMessage:",
+            "mangledName": "$s15Appylar_SDK_iOS10BannerViewC21userContentController_10didReceiveySo06WKUsergH0C_So15WKScriptMessageCtF",
+            "moduleName": "Appylar_SDK_iOS",
+            "objc_name": "userContentController:didReceiveScriptMessage:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:createWebViewWith:for:windowFeatures:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WebKit.WKWebView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebViewConfiguration",
+                "printedName": "WebKit.WKWebViewConfiguration",
+                "usr": "c:objc(cs)WKWebViewConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWindowFeatures",
+                "printedName": "WebKit.WKWindowFeatures",
+                "usr": "c:objc(cs)WKWindowFeatures"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Appylar_SDK_iOS@objc(cs)BannerView(im)webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
+            "mangledName": "$s15Appylar_SDK_iOS10BannerViewC03webE0_09createWebE4With3for14windowFeaturesSo05WKWebE0CSgAI_So0mE13ConfigurationCSo18WKNavigationActionCSo08WKWindowL0CtF",
+            "moduleName": "Appylar_SDK_iOS",
+            "objc_name": "webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Appylar_SDK_iOS@objc(cs)BannerView",
+        "mangledName": "$s15Appylar_SDK_iOS10BannerViewC",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Appylar_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/BannerViewDetails\/AdViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 343,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/AdsModel\/Advertisement.swift",
+      "kind": "BooleanLiteral",
+      "offset": 752,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/AdsModel\/AdSize.swift",
+      "kind": "StringLiteral",
+      "offset": 264,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Core\/Appylar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 388,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Core\/Appylar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 427,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Enumerations\/AdOrientation.swift",
+      "kind": "StringLiteral",
+      "offset": 170,
+      "length": 10,
+      "value": "\"portrait\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Enumerations\/AdOrientation.swift",
+      "kind": "StringLiteral",
+      "offset": 202,
+      "length": 11,
+      "value": "\"landscape\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Enumerations\/AdOrientation.swift",
+      "kind": "StringLiteral",
+      "offset": 170,
+      "length": 10,
+      "value": "\"portrait\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Enumerations\/AdOrientation.swift",
+      "kind": "StringLiteral",
+      "offset": 202,
+      "length": 11,
+      "value": "\"landscape\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Core\/Session.swift",
+      "kind": "StringLiteral",
+      "offset": 190,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Core\/Session.swift",
+      "kind": "StringLiteral",
+      "offset": 225,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Core\/Session.swift",
+      "kind": "StringLiteral",
+      "offset": 260,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Core\/Session.swift",
+      "kind": "BooleanLiteral",
+      "offset": 289,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Core\/Session.swift",
+      "kind": "Array",
+      "offset": 337,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Core\/Session.swift",
+      "kind": "Array",
+      "offset": 395,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Core\/Session.swift",
+      "kind": "FloatLiteral",
+      "offset": 433,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Core\/Session.swift",
+      "kind": "IntegerLiteral",
+      "offset": 473,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Core\/Session.swift",
+      "kind": "BooleanLiteral",
+      "offset": 501,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Core\/Session.swift",
+      "kind": "IntegerLiteral",
+      "offset": 533,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Core\/Session.swift",
+      "kind": "IntegerLiteral",
+      "offset": 583,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Core\/Session.swift",
+      "kind": "IntegerLiteral",
+      "offset": 627,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Enumerations\/AdType.swift",
+      "kind": "StringLiteral",
+      "offset": 154,
+      "length": 8,
+      "value": "\"banner\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Enumerations\/AdType.swift",
+      "kind": "StringLiteral",
+      "offset": 187,
+      "length": 14,
+      "value": "\"interstitial\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Enumerations\/AdType.swift",
+      "kind": "StringLiteral",
+      "offset": 154,
+      "length": 8,
+      "value": "\"banner\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Enumerations\/AdType.swift",
+      "kind": "StringLiteral",
+      "offset": 187,
+      "length": 14,
+      "value": "\"interstitial\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 190,
+      "length": 25,
+      "value": "\"https:\/\/www.appylar.com\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 245,
+      "length": 18,
+      "value": "\"\/api\/v1\/content\/\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 294,
+      "length": 16,
+      "value": "\"\/api\/v1\/error\/\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 347,
+      "length": 18,
+      "value": "\"\/api\/v1\/session\/\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 422,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 455,
+      "length": 9,
+      "value": "\"density\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 489,
+      "length": 8,
+      "value": "\"height\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 523,
+      "length": 9,
+      "value": "\"country\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 559,
+      "length": 10,
+      "value": "\"language\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 595,
+      "length": 9,
+      "value": "\"app_key\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 629,
+      "length": 8,
+      "value": "\"app_id\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 665,
+      "length": 11,
+      "value": "\"test_mode\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 707,
+      "length": 14,
+      "value": "\"orientations\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 753,
+      "length": 15,
+      "value": "\"session_token\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 804,
+      "length": 19,
+      "value": "\"rotation_interval\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 854,
+      "length": 15,
+      "value": "\"buffer_limits\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 891,
+      "length": 5,
+      "value": "\"min\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 920,
+      "length": 7,
+      "value": "\"error\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 952,
+      "length": 8,
+      "value": "\"banner\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 991,
+      "length": 14,
+      "value": "\"interstitial\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1037,
+      "length": 15,
+      "value": "\"banner_height\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1086,
+      "length": 17,
+      "value": "\"age_restriction\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1138,
+      "length": 18,
+      "value": "\"extra_parameters\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1187,
+      "length": 14,
+      "value": "\"combinations\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1225,
+      "length": 7,
+      "value": "\"scale\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1255,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1286,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1315,
+      "length": 4,
+      "value": "\"ad\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1349,
+      "length": 13,
+      "value": "\"orientation\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1391,
+      "length": 12,
+      "value": "\"expires_at\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1426,
+      "length": 6,
+      "value": "\"html\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1454,
+      "length": 5,
+      "value": "\"url\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1488,
+      "length": 12,
+      "value": "\"statusCode\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1549,
+      "length": 16,
+      "value": "\"No Ads to Show\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1627,
+      "length": 18,
+      "value": "\"err_rate_limited\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1681,
+      "length": 18,
+      "value": "\"err_unauthorized\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1732,
+      "length": 15,
+      "value": "\"err_forbidden\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Models\/Helper\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1770,
+      "length": 6,
+      "value": "\"wait\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/BannerViewDetails\/BannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 340,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/BannerViewDetails\/BannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 369,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/BannerViewDetails\/BannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 390,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Enumerations\/RequestType.swift",
+      "kind": "StringLiteral",
+      "offset": 153,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Enumerations\/RequestType.swift",
+      "kind": "StringLiteral",
+      "offset": 175,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Enumerations\/RequestType.swift",
+      "kind": "StringLiteral",
+      "offset": 196,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Enumerations\/RequestType.swift",
+      "kind": "StringLiteral",
+      "offset": 153,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Enumerations\/RequestType.swift",
+      "kind": "StringLiteral",
+      "offset": 175,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/ios_mayank\/Downloads\/Appylar\/Appylar SDK iOS\/Enumerations\/RequestType.swift",
+      "kind": "StringLiteral",
+      "offset": 196,
+      "length": 5,
+      "value": "\"GET\""
+    }
+  ]
+}
