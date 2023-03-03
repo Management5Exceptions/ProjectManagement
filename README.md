@@ -1,13 +1,12 @@
-#Applylar IOS SDK Integration
+# Applylar IOS SDK Integration
 
-Appylar library for IOS is a lightweight and easy-to-use Ad integration SDK provided by Appylar. SDK enables developers to integrate Appylar Ads in any type of iOS application.
+Appylar library for iOS is a lightweight and easy-to-use Ad integration SDK provided by Appylar. SDK enables developers to integrate Appylar Ads in any type of iOS application.
 
 Appylar provides several types of Ads and enables you to set Ads wherever you want in the application.
 
 The Ads provided by Appylar are like:
-
  - Banners
- - Insterstitials
+ - Interstitials
  
 ## General Requirements
  - Targeted versions must be iOS 12.0 and later.
@@ -23,17 +22,18 @@ The installation guide will lead you through the following steps:
 
 Make sure `Cocoapods` is available in your project's root file(ViewController).
 Then import the class in your view controller
+
+```swift
+Import UIKit
+Import Appylar_SDK_iOS
 ```
-import UIKit
-import Appylar_SDK_iOS
-``` 
 
 
 # Step 2: Setup the configuration for your App and Listeners
 
 1. Create extension of View Controller(), override it's viewDidLoad() method and implement `AdEventListener` protocol. You can, of course, use your Application subclass, if you already have one in your project.
-iOS - ViewController
-```
+
+```swift
 Import UIKit
 Import Appylar_SDK_iOS
 
@@ -58,9 +58,7 @@ extension ViewController: AdEventListener {
 ```
 
 2. Initialize SDK with configuration:
-
-iOS - ViewController
-```
+```swift
 Import UIKit
 Import Appylar_SDK_iOS
 
@@ -81,9 +79,7 @@ class viewController: UIViewController{
 ```
 
 3. There is another method available for parameters customization:
-
-iOS - ViewController
-```
+```swift
 Override func viewDidLoad(){
    	super.viewDidLoad()  
      	Appylar.adeventlistener = self //Attach callback listeners for SDK before initialization
@@ -95,7 +91,7 @@ Override func viewDidLoad(){
 ```
 
 4. Add this new subclass to AndroidManifest.xml" inside <application> tag: - `[AndroidManifest.xml]`
-```
+```swift
 <application
     android:name=".AppylarApplication"
     ...
@@ -105,13 +101,13 @@ Override func viewDidLoad(){
 
 1. To integrate the BannerView component in your design prepare a view from storyboard and of BannerView type, prefer below snippet:
 
-```
+```swift
 @IBOutlet weak var bannerView: BannerView!
 ```	  
 
 2. Bind component to your activity and implement callback listeners.
 
-```
+```swift
 func onNoad(){
     	//Callback for when there is no Ad to show.  
 }
@@ -122,7 +118,7 @@ func onLoadAds() {
 
 3. Check Ad availability and show the Ad.
 
-```
+```swift
 if Appylar.canShowAd(Adtype: .banner) == true {  
      	if self.selectedPosition == .top {              
   	self.topBannerView.showAds(position: .top)               
@@ -135,14 +131,14 @@ if Appylar.canShowAd(Adtype: .banner) == true {
 
 4. For hiding the banner at the run time:
 
-```
+```swift
 bannerView.hideBanner()
 ```
 
 # Step 4: Add Interstitial to the application
 
 1. Implement callback listeners for Interstitial.
-```
+```swift
 func onNoad(){
     	//Callback for when there is no Ad to show.  
 }
@@ -157,7 +153,7 @@ func onInterstitialClosed()
 
 2. Check Ad availablity and show the Ad.
 
-```
+```swift
 if  Appylar.canShowAd(Adtype: .interstitial) == true {
    	let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
    	let <Your_Controller_Name> = storyBoard.instantiateViewController(withIdentifier: "<Your_Controller_Identifier>") as! <Your_Controller_Name>
@@ -172,7 +168,7 @@ if  Appylar.canShowAd(Adtype: .interstitial) == true {
 
 1. For initialization
 	
-```
+```swift
 import UIKit
 import Appylar_SDK_iOS
 		
@@ -194,7 +190,7 @@ class viewController: UIViewController{
 
 2. For design:
 
-```
+```swift
 Import UIKit
 Import Appylar_SDK_iOS
 
@@ -223,7 +219,7 @@ class viewController: UIViewController {
 
 3.  Implements for both the types:
 
-```
+```swift
 Import UIKit
 Import Appylar_SDK_iOS
 
