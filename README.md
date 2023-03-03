@@ -88,9 +88,7 @@ Override func viewDidLoad(){
 
 1. To integrate the BannerView component in your design prepare a view from storyboard and of BannerView type, prefer below snippet:
 
-
 ![Banner View Image](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/BannerView.png)
-
 ```swift
 @IBOutlet weak var bannerView: BannerView!
 ```	 
@@ -108,10 +106,7 @@ func onLoadAds() {
 
 3. Check Ad availability and show the Ad.
 
-
 ![Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/ClickShowBanner.png)
-
-
 ```swift
 if Appylar.canShowAd(Adtype: .banner) == true {  
      	if self.selectedPosition == .top {              
@@ -124,14 +119,12 @@ if Appylar.canShowAd(Adtype: .banner) == true {
 ```
 
 4. For hiding the banner at the run time:
-
+![Hide Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/HideBanner.png)
 ```swift
    bannerView.hideBanner()
 ```
 
 # Step 4: Add Interstitial to the application
-
-![Hide Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/HideBanner.png)
 
 1. Implement callback listeners for Interstitial.
 ```swift
