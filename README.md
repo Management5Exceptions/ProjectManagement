@@ -13,12 +13,12 @@ The Ads provided by Appylar are:
  
 # Step 1: Add Appylar to your Gradle
 
-Make sure `Cocoapods` is available in your project's root file(ViewController).
+Make sure `Pods` is available in your project's root file(ViewController).
 Then import the class in your ViewController.
 
 ```swift
-Import UIKit
-Import Appylar
+import UIKit
+import Appylar
 ```
 
 
@@ -230,7 +230,7 @@ class ViewController: UIViewController {
    	}
         
     	@IBAction func btnInitDidTapped(_ sender: UIButton) {
-            	Appylar.initializeWithApiKey(testmode: true, app_Key: self.txtfieldApiKey.text ?? "", app_id: "", orientations: self.selectedOrientations, Adtypes: self.selectedAdTypes)
+            	Appylar.initializeWithApiKey(testmode: true, app_Key: self.txtfieldApiKey.text ?? "", app_id: "", orientations: self.selectedOrientations,                 Adtypes: self.selectedAdTypes)
     	 }
     
     	@IBAction func btnShowBannerDidTapped(_ sender: UIButton) {
