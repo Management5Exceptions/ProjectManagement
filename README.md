@@ -301,8 +301,13 @@ extension ViewController : AdEventListener {
     	}	
     
     	func onInterstitialClosed() {
-        	AddLogsToTextView(logs: "interstitial closed")
+        	AddLogsToTextView(logs: "Interstitial closed")
     	} 
+	
+	func onNoInternet(){
+               AddLogsToTextView(logs: "Internet is not available")
+       }
+    
 }
 
 ```
