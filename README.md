@@ -134,7 +134,15 @@ func onLoadAds() {
 
 # Step 4: Add Interstitial to the application
 
-1. Implement callback listeners for Interstitial.
+
+1. create a `ViewController` of type `AdViewController` and Add code for orientation lock.
+  ![Orientation Lock](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/HideBanner.png)
+  
+  After that override function in AppDelegate for orientation lock of interstitial ad.
+  
+  ![Orientation Lock](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/HideBanner.png)
+
+2. Implement callback listeners for Interstitial.
 ```swift
 func onNoad(){
     	//Callback for when there is no Ad to show.  
@@ -147,7 +155,7 @@ func onInterstitialClosed() {
    }
 ```	
 
-2. Check Ad availablity and show the Ad.
+3. Check Ad availablity and show the Ad.
 
 
 ![Interstitial Ad](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/ShowInterstitial.png)
