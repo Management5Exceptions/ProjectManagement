@@ -115,6 +115,7 @@ func onLoadAds() {
 3. Check Ad availability and show the Ad.
 
    ![Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/ClickShowBanner.png)
+   
 ```swift
    if Appylar.canShowAd(Adtype: .banner) == true {  
      	if self.selectedPosition == .top {              
