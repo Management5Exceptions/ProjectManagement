@@ -89,7 +89,7 @@ Override func viewDidLoad(){
 
 1. To integrate the BannerView component in your design prepare a view from storyboard and of BannerView type, prefer below snippet:
 
-![Banner View Image](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/BannerViewOutlet.png)
+   ![Banner View Image](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/BannerViewOutlet.png)
    
 Steps:
    
@@ -114,7 +114,7 @@ func onLoadAds() {
 
 3. Check Ad availability and show the Ad.
 
-![Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/ClickShowBanner.png)
+   ![Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/ClickShowBanner.png)
 ```swift
    if Appylar.canShowAd(Adtype: .banner) == true {  
      	if self.selectedPosition == .top {              
