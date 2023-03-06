@@ -136,11 +136,12 @@ func onLoadAds() {
 
 
 1. create a `ViewController` of type `AdViewController` and Add code for orientation lock.
-  ![Orientation Lock](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/HideBanner.png)
+
+    ![Orientation Lock](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/Appdelegate.png)
   
-  After that override function in AppDelegate for orientation lock of interstitial ad.
+    After that override function in AppDelegate for orientation lock of interstitial ad.
   
-  ![Orientation Lock](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/HideBanner.png)
+    ![Orientation Lock](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/WebviewControllerLock.png)
 
 2. Implement callback listeners for Interstitial.
 ```swift
