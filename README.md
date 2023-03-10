@@ -162,7 +162,7 @@ func onInterstitialClosed() {
 3. Check Ad availablity and show the Ad.
 
 
-![Interstitial Ad](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/ShowInterstitial.png)
+   ![Interstitial Ad](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/ShowInterstitial.png)
 
 
 ```swift
