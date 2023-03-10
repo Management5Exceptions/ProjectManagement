@@ -62,7 +62,7 @@ class ViewController: UIViewController{
             	Appylar.adeventlistener = self //Attach callback listeners for SDK before initialization
             	//Here ‘adeventlister’ is a variable of AdEventListener
            	//Initialization
-           	Appylar.initializeWithApiKey(testmode: true // ‘True’ for development and ‘False’ for production,                         
+           	Appylar.Init(testmode: true // ‘True’ for development and ‘False’ for production,                         
           		app_Key: "<YOUR_APP_KEY>"?? “”, //APP KEY provided by console for Development use    ["OwDmESooYtY2kNPotIuhiQ"]
            		app_id: "", 
  			orientations: [Orientation.PORTRAIT, Orientation.LANDSCAPE], 	//Supported orientations for Ads 
@@ -190,7 +190,7 @@ class ViewController: UIViewController{
             	Appylar.adeventlistener = self //Attach callback listeners for SDK before initialization
             	//Here ‘adeventlister’ is a variable of AdEventListener
            	//Initialization
-           	Appylar.initializeWithApiKey(testmode: true // ‘True’ for development and ‘False’ for production,                         
+           	Appylar.Init(testmode: true // ‘True’ for development and ‘False’ for production,                         
          	app_Key: "<YOUR_APP_KEY>"?? “” //APP KEY provide by console for Development use    ["OwDmESooYtY2kNPotIuhiQ"] ,
            	app_id: "", 
  		orientations: [Orientation.PORTRAIT, Orientation.LANDSCAPE] 	//Supported orientations for Ads, 
@@ -253,7 +253,7 @@ class ViewController: UIViewController {
    	}
         
     	@IBAction func btnInitDidTapped(_ sender: UIButton) {
-            	Appylar.initializeWithApiKey(testmode: true, app_Key: self.txtfieldApiKey.text ?? "", app_id: "", orientations: self.selectedOrientations,                 Adtypes: self.selectedAdTypes)
+            	Appylar.Init(testmode: true, app_Key: self.txtfieldApiKey.text ?? "", app_id: "", orientations: self.selectedOrientations,                 Adtypes: self.selectedAdTypes)
     	 }
     
     	@IBAction func btnShowBannerDidTapped(_ sender: UIButton) {
