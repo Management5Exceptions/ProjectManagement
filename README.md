@@ -194,6 +194,25 @@ struct AppUtility {
 }
 
 ```
+And add code for locking in app delegate as well
+```swift
+
+    var restrictRotation: UIInterfaceOrientationMask?
+    var orientationLock = UIInterfaceOrientationMask.all
+    
+      func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+            switch window?.windowScene?.interfaceOrientation {
+                case .portrait, .portraitUpsideDown :
+                    restrictRotation = .portrait
+                case .landscapeLeft, .landscapeRight
+                    restrictRotation = .landscape
+                default :
+                    return .all
+            }
+        return self.orientationLock
+      }
+    
+```
 
 # Sample Codes
 
