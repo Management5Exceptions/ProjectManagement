@@ -175,7 +175,7 @@ if  Appylar.canShowAd(Adtype: .interstitial) == true {
    	self.onNoad() // if canShowAd function returns false then a onNoad event is fired.
 }
 ```
-4. For lock the orientation of interstitial create a swift file and create a structure in it.
+4. For lock the orientation of interstitial create a file `AppUtility` and create a structure in it.
 ```swift
 struct AppUtility {
      static func lockOrientation(_ orientation: UIInterfaceOrientationMask) {
