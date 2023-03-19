@@ -285,7 +285,7 @@ class ViewController: UIViewController {
    	}
         
     	@IBAction func btnInitDidTapped(_ sender: UIButton) {
-            	Appylar.Init(testmode: true, app_Key: self.txtfieldApiKey.text ?? "", app_id: "", orientations: self.selectedOrientations,                 Adtypes: self.selectedAdTypes)
+            	AppylarManager.Init(app_Key: self.txtfieldApiKey.text ?? "",Adtypes: self.selectedAdTypes,orientations:      self.selectedOrientations,testmode: true)
     	 }
     
     	@IBAction func btnShowBannerDidTapped(_ sender: UIButton) {
@@ -295,8 +295,7 @@ class ViewController: UIViewController {
     	 }
     
     	@IBAction func btnHideBannerDidTapped(_ sender: UIButton) {
-        	self.topBannerView.hideBanner()
-        	self.bottomBannerView.hideBanner()
+        	self.bannerView.hideBanner()
         	self.view.layoutIfNeeded()
     	}
     
