@@ -169,6 +169,13 @@ if  InterstitialViewController.canShowAd(){
         self.navigationController?.pushViewController(<Your_Controller_Name>, animated: false)
 }
 ```
+And in a new `ViewController` call `showAd()` in `viewDidLoad()`
+``` swift
+override func viewDidLoad() {
+      super.viewDidLoad()
+      showAds()
+}
+```
 4. For lock the orientation of interstitial create a file `AppUtility` and create a structure in it.
 ```swift
 struct AppUtility {
