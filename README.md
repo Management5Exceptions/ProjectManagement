@@ -45,7 +45,7 @@ extension ViewController: AppylarDelegate {
               	//Callback for successful initialization
       	}
 
-     	func onError(description: String) {
+     	func onError(error: String) {
                 //Callback for error thrown by SDK
         }
 }
