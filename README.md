@@ -289,8 +289,10 @@ class ViewController: UIViewController {
     	 }
     
     	@IBAction func btnShowBannerDidTapped(_ sender: UIButton) {
-        	showBanner()
-    	}
+            if BannerView.canShowAd(){             
+  	         self.bannerView.showAd(placement: txtfieldEnterPlacement.text ?? "" )            
+            }
+    	 }
     
     	@IBAction func btnHideBannerDidTapped(_ sender: UIButton) {
         	self.topBannerView.hideBanner()
