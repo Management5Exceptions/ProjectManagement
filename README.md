@@ -34,7 +34,7 @@ import Appylar
 class ViewController: UIViewController{
       	Override func viewDidLoad(){
             	super.viewDidLoad()  
-            	AppylarManager.setEventListener(delegate: self)  //Attach callback listeners for SDK before initialization
+                AppylarManager.setEventListener(delegate: self,bannerDelegate: self,interstitialDelegate: self)  //Attach callback listeners for SDK before initialization
             	//Here ‘setEventListener’ is a method for AppylarManager
             	//Initialization
             	……
@@ -59,7 +59,7 @@ import Appylar
 class ViewController: UIViewController{
       	Override func viewDidLoad(){
 		super.viewDidLoad()  
-            	AppylarManager.setEventListener(delegate: self)  //Attach callback listeners for SDK before initialization
+                AppylarManager.setEventListener(delegate: self,bannerDelegate: self,interstitialDelegate: self)  //Attach callback listeners for SDK before initialization
             	//Here ‘setEventListener’ is a method for AppylarManager//Initialization
            	AppylarManager.Init(                        
           		app_Key: "<YOUR_APP_KEY>"?? “”, //APP KEY provided by console for Development use    ["OwDmESooYtY2kNPotIuhiQ"]
@@ -76,7 +76,7 @@ class ViewController: UIViewController{
 ```swift
 Override func viewDidLoad(){
    	super.viewDidLoad()  
-     	AppylarManager.setEventListener(delegate: self)  //Attach callback listeners for SDK before initialization
+     	AppylarManager.setEventListener(delegate: self,bannerDelegate: self,interstitialDelegate: self)//Attach callback listeners for SDK before initialization
         //Here ‘setEventListener’ is a method for AppylarManager
 	//Initialization
      	AppylarManager.setParameters(dict: [
@@ -226,7 +226,7 @@ import Appylar
 class ViewController: UIViewController{
     	Override func viewDidLoad() {
 		super.viewDidLoad()  
-            	AppylarManager.setEventListener(delegate: self)  //Attach callback listeners for SDK before initialization
+                AppylarManager.setEventListener(delegate: self,bannerDelegate: self,interstitialDelegate: self) //Attach callback listeners for SDK before initialization
             	//Here ‘setEventListener’ is a method for AppylarManager//Initialization
            	AppylarManager.Init(                        
           		app_Key: "<YOUR_APP_KEY>"?? “”, //APP KEY provided by console for Development use    ["OwDmESooYtY2kNPotIuhiQ"]
