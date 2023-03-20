@@ -107,10 +107,10 @@ Steps:
 ```swift
 func onNoad(){
     	//Callback for when there is no Ad to show.  
-    }
-func onLoadAds() {
-    	//Callback for when Ads loads successfully.
-    }
+   }
+func onAdShown(type: Appylar_SDK_iOS.AdType) {
+       //Callback for Ad shown.  
+   }
 ```
 
 3. Check Ad availability and show the Ad.
@@ -147,8 +147,8 @@ func onLoadAds() {
 func onNoad(){
     	//Callback for when there is no Ad to show.  
    }
-func onLoadAds() {
-    	//Callback for when Ads loads successfully.
+func onAdShown(type: Appylar_SDK_iOS.AdType) {
+       //Callback for Ad shown.  
    }
 func onInterstitialClosed() {
     	//Callback for close event of interstitial
@@ -324,7 +324,9 @@ extension ViewController : AppylarDelegate {
     func onError(error : String) {
         AddLogsToTextView(logs: "onError() - \(error)")
     }
-    
+}  
+   
+extension ViewController: BannerViewDelegate, InterstitialDelegate{
     func onNoAd() {
         AddLogsToTextView(logs: "onNoAd()")
     }
@@ -336,8 +338,5 @@ extension ViewController : AppylarDelegate {
     func onInterstitialClosed() {
         AddLogsToTextView(logs: "onInterstitialClosed()")
     }
-    
-}
-
-
+} 
 ```
