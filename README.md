@@ -173,7 +173,7 @@ And in a new `ViewController` call `showAd()` in their `viewDidLoad()` method fo
 ``` swift
 override func viewDidLoad() {
       super.viewDidLoad()
-      showAds()
+      showAd()
 }
 ```
 4. For lock the orientation of interstitial create a file `AppUtility` and create a structure in it.
