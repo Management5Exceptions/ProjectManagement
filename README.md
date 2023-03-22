@@ -115,7 +115,7 @@ func onBannerShown() {
 
 3. Check Ad availability and show the Ad.
 
-   ![Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/ClickShowBanner.png)
+   ![Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/bannerButton.png)
    
 ```swift
    if BannerView.canShowAd(){             
@@ -125,7 +125,7 @@ func onBannerShown() {
 
 4. For hiding the banner at the run time:
    
-   ![Hide Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/HideBanner.png)
+   ![Hide Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/hideBanner.png)
    
 ```swift
    bannerView.hideBanner()
@@ -158,7 +158,7 @@ func onInterstitialClosed() {
 3. Check Ad availablity and show the Ad.
 
 
-   ![Interstitial Ad](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/ShowInterstitial.png)
+   ![Interstitial Ad](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/interstitialAd.png)
 
 
 ```swift
