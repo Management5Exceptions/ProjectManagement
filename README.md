@@ -105,10 +105,10 @@ Steps:
 2. Bind component to your activity and implement callback listeners.
 
 ```swift
-func onNoad(){
+func onNoBanner(){
     	//Callback for when there is no Ad to show.  
    }
-func onAdShown(type: Appylar_SDK_iOS.AdType) {
+func onBannerShown() {
        //Callback for Ad shown.  
    }
 ```
@@ -144,10 +144,10 @@ func onAdShown(type: Appylar_SDK_iOS.AdType) {
 
 2. Implement callback listeners for Interstitial.
 ```swift
-func onNoad(){
+func onNoInterstitial(){
     	//Callback for when there is no Ad to show.  
    }
-func onAdShown(type: Appylar_SDK_iOS.AdType) {
+func onInterstitialShown() {
        //Callback for Ad shown.  
    }
 func onInterstitialClosed() {
@@ -326,17 +326,29 @@ extension ViewController : AppylarDelegate {
     }
 }  
    
-extension ViewController: BannerViewDelegate, InterstitialDelegate{
-    func onNoAd() {
-        AddLogsToTextView(logs: "onNoAd()")
+extension ViewController: BannerViewDelegate{
+    func onNoBanner() {
+        AddLogsToTextView(logs: "onNoBanner()")
     }
     
-    func onAdShown(type: Appylar_SDK_iOS.AdType) {
-        AddLogsToTextView(logs: "onAdShown()")
+    func onBannerShown() {
+        AddLogsToTextView(logs: "onBannerShown()")
+    }
+    
+    
+}
+
+extension ViewController: InterstitialDelegate{
+    func onNoInterstitial() {
+        AddLogsToTextView(logs: "onNoInterstitial()")
+    }
+    
+    func onInterstitialShown() {
+        AddLogsToTextView(logs: "onInterstitialShown()")
     }
     
     func onInterstitialClosed() {
         AddLogsToTextView(logs: "onInterstitialClosed()")
     }
-} 
+}
 ```
