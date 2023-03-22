@@ -136,7 +136,7 @@ func onBannerShown() {
 
 1. create a `ViewController` of type `InterstitialViewController` and Add code for orientation lock.
 
-    ![Orientation Lock](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/interstitalImage.png)
+    ![Orientation Lock](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/interstitialView.png)
   
     After that override function in AppDelegate for orientation lock of interstitial ad.
   
