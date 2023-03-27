@@ -119,7 +119,7 @@ func onBannerShown() {
    
 ```swift
    if BannerView.canShowAd(){             
-  	    self.bannerView.showAd(placement: txtfieldEnterPlacement.text ?? "" )            
+  	    self.bannerView.showAd(placement: "String" ?? "" )            
     }
 ```
 
@@ -134,13 +134,10 @@ func onBannerShown() {
 # Step 4: Add Interstitial to the application
 
 
-1. create a `ViewController` of type `InterstitialViewController` and Add code for orientation lock.
-
-    ![Orientation Lock](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/interstitialView.png)
-  
-    After that override function in AppDelegate for orientation lock of interstitial ad.
-  
-    ![Orientation Lock](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/Appdelegate.png)
+1. Make your `ViewController` of type `InterstitialViewController`.  
+```
+   class ViewController: InterstitialViewController
+```
 
 2. Implement callback listeners for Interstitial.
 ```swift
@@ -163,56 +160,16 @@ func onInterstitialClosed() {
 
 ```swift
 if  InterstitialViewController.canShowAd(){
-   	let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-   	let <Your_Controller_Name> = storyBoard.instantiateViewController(withIdentifier: "<Your_Controller_Identifier>") as! <Your_Controller_Name>
-      	<Your_Controller_Name>.restrictRotation = appDelegate.restrictRotation ?? .all
-        self.navigationController?.pushViewController(<Your_Controller_Name>, animated: false)
+   	 if InterstitialViewController.canShowAd(){
+            self.showAd(placement: String ?? "")
+        }
 }
 ```
-And in a new `ViewController` call `showAd()` in their `viewDidLoad()` method for showing Ads.
-``` swift
-override func viewDidLoad() {
-      super.viewDidLoad()
-      showAd()
-}
-```
-4. For lock the orientation of interstitial create a file `AppUtility` and create a structure in it.
+4. For lock the orientation of interstitial create a file `AppDelegate` and create a structure in it.
 ```swift
-struct AppUtility {
-     static func lockOrientation(_ orientation: UIInterfaceOrientationMask) {
-    
-            if let delegate = UIApplication.shared.delegate as? AppDelegate {
-                delegate.orientationLock = orientation
-            }
-     }
-     
-     static func lockOrientation(_ orientation: UIInterfaceOrientationMask, andRotateTo rotateOrientation:UIInterfaceOrientation) {
-            self.lockOrientation(orientation)
-            UIDevice.current.setValue(rotateOrientation.rawValue, forKey: "orientation")
-            UINavigationController.attemptRotationToDeviceOrientation()
-     }
-
-}
-
-```
-And add code for locking in app delegate as well
-```swift
-
-    var restrictRotation: UIInterfaceOrientationMask?
-    var orientationLock = UIInterfaceOrientationMask.all
-    
       func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-            switch window?.windowScene?.interfaceOrientation {
-                case .portrait, .portraitUpsideDown :
-                    restrictRotation = .portrait
-                case .landscapeLeft, .landscapeRight
-                    restrictRotation = .landscape
-                default :
-                    return .all
-            }
-        return self.orientationLock
+           return AppylarManager.supportedOrientation
       }
-    
 ```
 
 # Sample Codes
@@ -223,7 +180,7 @@ And add code for locking in app delegate as well
 import UIKit
 import Appylar
 		
-class ViewController: UIViewController{
+class ViewController: InterstitialViewController{
     	Override func viewDidLoad() {
 		super.viewDidLoad()  
                 AppylarManager.setEventListener(delegate: self,bannerDelegate: self,interstitialDelegate: self) //Attach callback listeners for SDK before initialization
@@ -245,7 +202,7 @@ class ViewController: UIViewController{
 import UIKit
 import Appylar
 
-class ViewController: UIViewController {
+class ViewController: InterstitialViewController {
 	func setUI() {
         	self.btnBannerPositionTop.isSelected = true
         	self.btnAdTypeBanner.isSelected = true
@@ -274,7 +231,7 @@ class ViewController: UIViewController {
 import UIKit
 import Appylar
 
-class ViewController: UIViewController { 
+class ViewController: InterstitialViewController { 
     	@IBAction func btnBannerositionTopDidTapped(_ sender: UIButton) {
         	btnBannerPositionTop.isSelected = true
         	self.constraintHeightBottomBannerView.constant = 0
@@ -307,12 +264,8 @@ class ViewController: UIViewController {
     	}
     
     	@IBAction func btnShowIntersitialDidTapped(_ sender: UIButton) {
-
         	if  InterstitialViewController.canShowAd(){
-            		let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-            		let nextViewController = storyBoard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
-            		nextViewController.restrictRotation = appDelegate.restrictRotation ?? .all
-            		self.navigationController?.pushViewController(nextViewController, animated: false)
+            		self.showAd(placement: self.txtfieldEnterPlacement.text ?? "")
        		} 
    	}
 }
