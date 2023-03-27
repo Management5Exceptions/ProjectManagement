@@ -135,7 +135,7 @@ func onBannerShown() {
 
 
 1. Make your `ViewController` of type `InterstitialViewController`.  
-```
+```swift
    class ViewController: InterstitialViewController
 ```
 
