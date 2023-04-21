@@ -89,12 +89,7 @@ Override func viewDidLoad(){
 # Step 3: Add BannerView to the application
 
 1. To integrate the BannerView component in your design prepare a view from storyboard and of BannerView type, prefer below snippet:
-
-   ![Banner View Image](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/BannerViewOutlet.png)
-   
-Steps:
-   
-  1. Drag a view from library.
+  1. Drag a view from library in your viewController.
   2. At there attribute inspector assign `BannerView` as a class and `Appylar` in module.
   3. Create there outlet of type BannerView.
 
@@ -115,8 +110,6 @@ func onBannerShown() {
 
 3. Check Ad availability and show the Ad.
 
-   ![Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/bannerButton.png)
-   
 ```swift
    if BannerView.canShowAd(){             
   	    self.bannerView.showAd(placement: "String" ?? "" )            
@@ -124,9 +117,7 @@ func onBannerShown() {
 ```
 
 4. For hiding the banner at the run time:
-   
-   ![Hide Banner View](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/hideBanner.png)
-   
+
 ```swift
    bannerView.hideBanner()
 ```
@@ -154,18 +145,13 @@ func onInterstitialClosed() {
 
 3. Check Ad availablity and show the Ad.
 
-
-   ![Interstitial Ad](https://github.com/Management5Exceptions/ProjectManagement/blob/main/ReadmeImage/interstitialAd.png)
-
-
 ```swift
 if  InterstitialViewController.canShowAd(){
-   	 if InterstitialViewController.canShowAd(){
-            self.showAd(placement: String ?? "")
-        }
+          self.showAd(placement: String ?? "")
 }
 ```
 4. For lock the orientation of interstitial create a file `AppDelegate` and create a structure in it.
+
 ```swift
       func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
            return AppylarManager.supportedOrientation
@@ -201,30 +187,7 @@ class ViewController: InterstitialViewController{
 ```swift
 import UIKit
 import Appylar
-
-class ViewController: InterstitialViewController {
-	func setUI() {
-        	self.btnBannerPositionTop.isSelected = true
-        	self.btnAdTypeBanner.isSelected = true
-        	self.btnAdTypeInterstitial.isSelected = true
-        	self.btnOrientationPortrait.isSelected = true
-        	self.btnOrientationLandScape.isSelected = true
-        
-        	self.selectedHeightOfBanner = 50
-        	self.selectedAge = 12
-        	if #available(iOS 13.0, *) {
-            		self.txtviewOutput.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
-        	}
-        	self.txtviewOutput.layer.borderWidth = 2
-        	self.txtviewOutput.layer.cornerRadius = 5
-        
-        	self.scrollview.layer.borderWidth = 2
-        	self.scrollview.layer.cornerRadius = 5
-        	setValueInArrays()
-    	        }
-}
 ```
-
 3.  Implements for both the types:
 
 ```swift
@@ -232,22 +195,7 @@ import UIKit
 import Appylar
 
 class ViewController: InterstitialViewController { 
-    	@IBAction func btnBannerositionTopDidTapped(_ sender: UIButton) {
-        	btnBannerPositionTop.isSelected = true
-        	self.constraintHeightBottomBannerView.constant = 0
-        	self.bottomBannerView.hideBanner()
-        	btnBannerPostionBottom.isSelected = false
-        	setValueInArrays()
-   	}
-    
-    	@IBAction func btnBannerositionBottomDidTapped(_ sender: UIButton) {
-		btnBannerPostionBottom.isSelected = true
-        	self.constraintHeightTopBannerView.constant = 0
-        	self.topBannerView.hideBanner()
-        	btnBannerPositionTop.isSelected = false
-        	setValueInArrays()
-   	}
-        
+    	
     	@IBAction func btnInitDidTapped(_ sender: UIButton) {
             	AppylarManager.Init(app_Key: self.txtfieldApiKey.text ?? "",Adtypes: self.selectedAdTypes,orientations:      self.selectedOrientations,testmode: true)
     	 }
