@@ -89,9 +89,10 @@ Override func viewDidLoad(){
 # Step 3: Add BannerView to the application
 
 1. To integrate the BannerView component in your design prepare a view from storyboard and of BannerView type, prefer below snippet:
-  1. Drag a view from library in your viewController.
-  2. At there attribute inspector assign `BannerView` as a class and `Appylar` in module.
-  3. Create there outlet of type BannerView.
+
+   1. Drag a view from library in your viewController.
+   2. At there attribute inspector assign `BannerView` as a class and `Appylar` in module.
+   3. Create there outlet of type BannerView.
 
 ```swift
 @IBOutlet weak var bannerView: BannerView!
