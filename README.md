@@ -183,11 +183,12 @@ class ViewController: InterstitialViewController{
 
 ```
 
-2. For design:
+2. For orientation lock of intrstitial:
 
 ```swift
-import UIKit
-import Appylar
+  func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+           return AppylarManager.supportedOrientation
+  }
 ```
 3.  Implements for both the types:
 
@@ -196,11 +197,6 @@ import UIKit
 import Appylar
 
 class ViewController: InterstitialViewController { 
-    	
-    	@IBAction func btnInitDidTapped(_ sender: UIButton) {
-            	AppylarManager.Init(app_Key: self.txtfieldApiKey.text ?? "",Adtypes: self.selectedAdTypes,orientations:      self.selectedOrientations,testmode: true)
-    	 }
-    
     	@IBAction func btnShowBannerDidTapped(_ sender: UIButton) {
             if BannerView.canShowAd(){             
   	         self.bannerView.showAd(placement: txtfieldEnterPlacement.text ?? "" )            
