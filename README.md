@@ -177,7 +177,8 @@ For better performance and check the availability of ads you can `canShowAd()` f
 		 self.bannerView.showAd()            
   }
 ```
-The parameter placement is optional, and it is up to the developer to decide whether to pass it or not.
+   The parameter placement is optional, and it is up to the developer to decide whether to pass it or not.
+
 4. To hide the banner.
 
 ```swift
@@ -207,7 +208,7 @@ func onInterstitialClosed() {
 ```	
 
 3. Check Ad availablity and show the Ad.<br>
-For better performance and check the availability of ads you can `canShowAd()` function.
+ For better performance and check the availability of ads you can `canShowAd()` function.
 ```swift
 if  InterstitialViewController.canShowAd(){
                  // showAd function with the value of placement
@@ -216,7 +217,8 @@ if  InterstitialViewController.canShowAd(){
 		 self.bannerView.showAd()
 }
 ```
-The parameter placement is optional, and it is up to the developer to decide whether to pass it or not.
+   The parameter placement is optional, and it is up to the developer to decide whether to pass it or not.
+
 4. For lock the orientation of interstitial in your `AppDelegate` and override a function in it.
 
 ```swift
