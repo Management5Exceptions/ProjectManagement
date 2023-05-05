@@ -109,7 +109,8 @@ class ViewController: UIViewController{
 		super.viewDidLoad() 
 		//Attach callback listeners for SDK before initialization
                 AppylarManager.setEventListener(delegate: self,bannerDelegate: self,interstitialDelegate: self)  
-            	//Here ‘setEventListener’ is a method for AppylarManager//Initialization
+            	//Here ‘setEventListener’ is a method for AppylarManager
+		//Initialization
            	AppylarManager.Init(                        
           		app_Key: "<YOUR_APP_KEY>"?? “”, //APP KEY provided by console for Development use
  			Adtypes: [AdType.BANNER, AdType.INTERSTITIAL],	//Types of Ads to integrate
@@ -121,7 +122,7 @@ class ViewController: UIViewController{
 
 ```
 
-3.To further customize the Appylar Ads, you can use the setParameters() function.
+3.To further customize the Appylar Ads, you can use the setParameters() function after a valid session os exists or after intialization.
 ```swift
 Override func viewDidLoad(){
    	super.viewDidLoad()  
@@ -129,6 +130,12 @@ Override func viewDidLoad(){
      	AppylarManager.setEventListener(delegate: self,bannerDelegate: self,interstitialDelegate: self)
         //Here ‘setEventListener’ is a method for AppylarManager
 	//Initialization
+	AppylarManager.Init(                        
+          		app_Key: "<YOUR_APP_KEY>"?? “”, //APP KEY provided by console for Development use
+ 			Adtypes: [AdType.BANNER, AdType.INTERSTITIAL],	//Types of Ads to integrate
+			orientations: [Orientation.PORTRAIT, Orientation.LANDSCAPE], 	//Supported orientations for Ads
+			testmode: true // ‘True’ for development and ‘False’ for production, 
+			)
      	AppylarManager.setParameters(dict: [
             "banner_height" : self.selectedHeightOfBanner != nil ? ["\(String(self.selectedHeightOfBanner!))"] : nil, // Height is given by user [“50”,”90]
             "age_restriction" : self.selectedAge != nil ? ["\(String(self.selectedAge!))"] : nil //Age is given by user[“12”,”15”,”18”] 
