@@ -214,7 +214,7 @@ class ViewController: InterstitialViewController{
 
 ```
 
-2. For orientation lock of intrstitial:
+2. For orientation lock of interstitial:
 
 ```swift
   func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
