@@ -122,7 +122,7 @@ class ViewController: UIViewController{
 
 ```
 
-3.To further customize the Appylar Ads, you can use the setParameters() function after a valid session os exists or after intialization.
+3.To further customize the Appylar Ads, you can use the setParameters() function after a valid session exists or after intialization.
 ```swift
 Override func viewDidLoad(){
    	super.viewDidLoad()  
