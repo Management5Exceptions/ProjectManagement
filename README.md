@@ -1,8 +1,8 @@
 # Integration Of Appylar For iOS
   Appylar is an SDK framework created by Appylar that provides ad-serving capabilities for iOS mobile applications.
- 
+ <a name="readme-top"></a>
  <!-- TABLE OF CONTENTS -->
-  <summary>Getting Started with Appylar Ads: Implementation Guide for Developers</summary>
+  <p>Implementation Guide for Developers: </p>
   <ol>
     <li>
       <a href="#about-appylar">About Appylar</a>
@@ -29,7 +29,7 @@
 ## About Appylar
 Appylar is a lightweight and user-friendly SDK for integrating ads into iOS applications, developed by Appylar. With this SDK, developers can easily integrate Appylar Ads into any type of iOS app
 
-### Built With
+#### Built With
  * [Swift](https://docs.swift.org/assets/images/swift.svg)
 
 ## Ad Types
@@ -40,7 +40,7 @@ Appylar offers multiple ad types and provides developers with the flexibility to
 
 ## Implementation
 To use Appylar Ads in your application, you need to follow these steps. Please note that additional implementation steps may be required based on your specific use case:
- ### Add Appylar 
+ #### Add Appylar 
 
  Before proceeding with Appylar Ads integration, ensure that the Pods directory is available in your project. Once confirmed, you can import the necessary class into your UIViewController class
 
@@ -49,8 +49,10 @@ To use Appylar Ads in your application, you need to follow these steps. Please n
  import Appylar
  ```
 
+<p align="right"><a href="#readme-top">Back To Top</a></p>
+****
 
-### Setup the configuration for your App and Listeners
+#### Setup the configuration for your App and Listeners
 
 
 1. To implement Appylar Ads in your iOS application, create an extension of UIViewController() and override its viewDidLoad() method. Additionally, implement the AppylarDelegate protocol within this extension. If you already have an application subclass in your project, you can use that instead.
@@ -113,8 +115,9 @@ Override func viewDidLoad(){
         ])  
      }
 ```
+<p align="right"><a href="#readme-top">Back To Top</a></p>
 
-### Implementation of Banner 
+#### Implementation of Banner 
 
 1. To integrate the BannerView component into your design, you need to prepare a view from the storyboard and set it to the BannerView type. Follow these steps:
   * Drag a view from the library to your UIViewController.
@@ -149,8 +152,9 @@ func onBannerShown() {
 ```swift
    bannerView.hideBanner()
 ```
+<p align="right"><a href="#readme-top">Back To Top</a></p>
 
-### Add Interstitial Ads
+#### Add Interstitial Ads
 
 1. Make your `ViewController` of type `InterstitialViewController`.  
 ```swift
@@ -184,6 +188,7 @@ if  InterstitialViewController.canShowAd(){
            return AppylarManager.supportedOrientation
       }
 ```
+<p align="right"><a href="#readme-top">Back To Top</a></p>
 
 ## Sample Codes
 
@@ -276,3 +281,4 @@ extension ViewController: InterstitialDelegate{
     }
 }
 ```
+<p align="right"><a href="#readme-top">Back To Top</a></p>
