@@ -80,12 +80,14 @@ import Appylar
 class ViewController: UIViewController{
       	Override func viewDidLoad(){
             	super.viewDidLoad()  
-                AppylarManager.setEventListener(delegate: self,bannerDelegate: self,interstitialDelegate: self)  //Attach callback listeners for SDK before initialization
+		//Attach callback listeners for SDK before initialization
+                AppylarManager.setEventListener(delegate: self,bannerDelegate: self,interstitialDelegate: self)  
             	//Here ‘setEventListener’ is a method for AppylarManager
             	//Initialization
             	……
          }
 }
+//Attach callbacks for initialization
 extension ViewController: AppylarDelegate {
     	func onInitialized() {
               	//Callback for successful initialization
@@ -104,12 +106,13 @@ import Appylar
 
 class ViewController: UIViewController{
       	Override func viewDidLoad(){
-		super.viewDidLoad()  
-                AppylarManager.setEventListener(delegate: self,bannerDelegate: self,interstitialDelegate: self)  //Attach callback listeners for SDK before initialization
+		super.viewDidLoad() 
+		//Attach callback listeners for SDK before initialization
+                AppylarManager.setEventListener(delegate: self,bannerDelegate: self,interstitialDelegate: self)  
             	//Here ‘setEventListener’ is a method for AppylarManager//Initialization
            	AppylarManager.Init(                        
-          		app_Key: "<YOUR_APP_KEY>"?? “”, //APP KEY provided by console for Development use    ["OwDmESooYtY2kNPotIuhiQ"]
- 			Adtypes: [AdType.BANNER, AdType.INTERSTITIAL]	//Types of Ads to integrate
+          		app_Key: "<YOUR_APP_KEY>"?? “”, //APP KEY provided by console for Development use
+ 			Adtypes: [AdType.BANNER, AdType.INTERSTITIAL],	//Types of Ads to integrate
 			orientations: [Orientation.PORTRAIT, Orientation.LANDSCAPE], 	//Supported orientations for Ads
 			testmode: true // ‘True’ for development and ‘False’ for production, 
 			)
@@ -122,7 +125,8 @@ class ViewController: UIViewController{
 ```swift
 Override func viewDidLoad(){
    	super.viewDidLoad()  
-     	AppylarManager.setEventListener(delegate: self,bannerDelegate: self,interstitialDelegate: self)//Attach callback listeners for SDK before initialization
+	//Attach callback listeners for SDK before initialization
+     	AppylarManager.setEventListener(delegate: self,bannerDelegate: self,interstitialDelegate: self)
         //Here ‘setEventListener’ is a method for AppylarManager
 	//Initialization
      	AppylarManager.setParameters(dict: [
@@ -147,6 +151,7 @@ Override func viewDidLoad(){
 2. Implement callback for banners.
 
 ```swift
+//Attach callbacks for banner.
 func onNoBanner(){
     	//Callback for when there is no Ad to show.  
    }
@@ -156,7 +161,7 @@ func onBannerShown() {
 ```
 
 3. Check Ad availability and show the Ad.
-
+For better performance and check the availability of ads you can `canShowAd()` function.
 ```swift
    if BannerView.canShowAd(){             
   	    self.bannerView.showAd(placement: "String" ?? "" )            
@@ -179,6 +184,7 @@ func onBannerShown() {
 
 2. Implement callbacks for Interstitial.
 ```swift
+//Attach callbacks for interstitial.
 func onNoInterstitial(){
     	//Callback for when there is no Ad to show.  
    }
@@ -191,7 +197,7 @@ func onInterstitialClosed() {
 ```	
 
 3. Check Ad availablity and show the Ad.
-
+For better performance and check the availability of ads you can `canShowAd()` function.
 ```swift
 if  InterstitialViewController.canShowAd(){
           self.showAd(placement: String ?? "")
@@ -217,8 +223,10 @@ import Appylar
 class ViewController: InterstitialViewController{
     	Override func viewDidLoad() {
 		super.viewDidLoad()  
-                AppylarManager.setEventListener(delegate: self,bannerDelegate: self,interstitialDelegate: self) //Attach callback listeners for SDK before initialization
-            	//Here ‘setEventListener’ is a method for AppylarManager//Initialization
+		//Attach callback listeners for SDK before initialization
+                AppylarManager.setEventListener(delegate: self,bannerDelegate: self,interstitialDelegate: self) 
+            	//Here ‘setEventListener’ is a method for AppylarManager
+		//Initialization
            	AppylarManager.Init(                        
           		app_Key: "<YOUR_APP_KEY>"?? “”, //APP KEY provided by console for Development use    ["OwDmESooYtY2kNPotIuhiQ"]
  			Adtypes: [AdType.BANNER, AdType.INTERSTITIAL]	//Types of Ads to integrate
@@ -261,6 +269,7 @@ class ViewController: InterstitialViewController {
        		} 
    	}
 }
+//Attach callbacks for Initialization.
 extension ViewController : AppylarDelegate {
     func onInitialized() {
         AddLogsToTextView(logs: "onInitialized() ")
@@ -270,7 +279,7 @@ extension ViewController : AppylarDelegate {
         AddLogsToTextView(logs: "onError() - \(error)")
     }
 }  
-   
+//Attach callbacks for banner.
 extension ViewController: BannerViewDelegate{
     func onNoBanner() {
         AddLogsToTextView(logs: "onNoBanner()")
@@ -282,7 +291,7 @@ extension ViewController: BannerViewDelegate{
     
     
 }
-
+//Attach callbacks for interstitial.
 extension ViewController: InterstitialDelegate{
     func onNoInterstitial() {
         AddLogsToTextView(logs: "onNoInterstitial()")
