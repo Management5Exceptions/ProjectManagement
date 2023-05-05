@@ -171,10 +171,13 @@ func onBannerShown() {
 For better performance and check the availability of ads you can `canShowAd()` function.
 ```swift
    if BannerView.canShowAd(){             
-  	    self.bannerView.showAd(placement: "String" ?? "" )            
-    }
+  	           // showAd function with the value of placement
+  	         self.bannerView.showAd(placement: txtfieldEnterPlacement.text ?? "" )
+		 // showAd function without placement parameter
+		 self.bannerView.showAd()            
+  }
 ```
-
+The parameter placement is optional, and it is up to the developer to decide whether to pass it or not.
 4. To hide the banner.
 
 ```swift
@@ -207,9 +210,13 @@ func onInterstitialClosed() {
 For better performance and check the availability of ads you can `canShowAd()` function.
 ```swift
 if  InterstitialViewController.canShowAd(){
-          self.showAd(placement: String ?? "")
+                 // showAd function with the value of placement
+  	         self.bannerView.showAd(placement: txtfieldEnterPlacement.text ?? "" )
+		 // showAd function without placement parameter
+		 self.bannerView.showAd()
 }
 ```
+The parameter placement is optional, and it is up to the developer to decide whether to pass it or not.
 4. For lock the orientation of interstitial in your `AppDelegate` and override a function in it.
 
 ```swift
@@ -260,8 +267,11 @@ import Appylar
 
 class ViewController: InterstitialViewController { 
     	@IBAction func btnShowBannerDidTapped(_ sender: UIButton) {
-            if BannerView.canShowAd(){             
-  	         self.bannerView.showAd(placement: txtfieldEnterPlacement.text ?? "" )            
+            if BannerView.canShowAd(){    
+	         // showAd function with the value of placement
+  	         self.bannerView.showAd(placement: txtfieldEnterPlacement.text ?? "" )
+		 // showAd function without placement parameter
+		 self.bannerView.showAd()
             }
     	 }
     
@@ -272,28 +282,31 @@ class ViewController: InterstitialViewController {
     
     	@IBAction func btnShowIntersitialDidTapped(_ sender: UIButton) {
         	if  InterstitialViewController.canShowAd(){
-            		self.showAd(placement: self.txtfieldEnterPlacement.text ?? "")
+                 // showAd function with the value of placement
+  	         self.bannerView.showAd(placement: txtfieldEnterPlacement.text ?? "" )
+		 // showAd function without placement parameter
+		 self.bannerView.showAd()
        		} 
    	}
 }
 //Attach callbacks for Initialization.
 extension ViewController : AppylarDelegate {
     func onInitialized() {
-        AddLogsToTextView(logs: "onInitialized() ")
+        Print("onInitialized() ")
     }
     
     func onError(error : String) {
-        AddLogsToTextView(logs: "onError() - \(error)")
+        Print("onError() - \(error)")
     }
 }  
 //Attach callbacks for banner.
 extension ViewController: BannerViewDelegate{
     func onNoBanner() {
-        AddLogsToTextView(logs: "onNoBanner()")
+        Print("onNoBanner()")
     }
     
     func onBannerShown() {
-        AddLogsToTextView(logs: "onBannerShown()")
+        Print("onBannerShown()")
     }
     
     
@@ -301,15 +314,15 @@ extension ViewController: BannerViewDelegate{
 //Attach callbacks for interstitial.
 extension ViewController: InterstitialDelegate{
     func onNoInterstitial() {
-        AddLogsToTextView(logs: "onNoInterstitial()")
+        Print("onNoInterstitial()")
     }
     
     func onInterstitialShown() {
-        AddLogsToTextView(logs: "onInterstitialShown()")
+        Print("onInterstitialShown()")
     }
     
     func onInterstitialClosed() {
-        AddLogsToTextView(logs: "onInterstitialClosed()")
+        Print("onInterstitialClosed()")
     }
 }
 ```
