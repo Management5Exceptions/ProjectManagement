@@ -160,7 +160,7 @@ func onBannerShown() {
    }
 ```
 
-3. Check Ad availability and show the Ad.
+3. Check Ad availability and show the Ad. <br>
 For better performance and check the availability of ads you can `canShowAd()` function.
 ```swift
    if BannerView.canShowAd(){             
@@ -196,7 +196,7 @@ func onInterstitialClosed() {
    }
 ```	
 
-3. Check Ad availablity and show the Ad.
+3. Check Ad availablity and show the Ad.<br>
 For better performance and check the availability of ads you can `canShowAd()` function.
 ```swift
 if  InterstitialViewController.canShowAd(){
