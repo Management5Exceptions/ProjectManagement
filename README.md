@@ -1,31 +1,59 @@
-# Applylar iOS SDK Integration
+# Integration Of Appylar For iOS
+  Appylar is an SDK framework created by Appylar that provides ad-serving capabilities for iOS mobile applications.
+ 
+ <!-- TABLE OF CONTENTS -->
+  <summary>Getting Started with Appylar Ads: Implementation Guide for Developers</summary>
+  <ol>
+    <li>
+      <a href="#about-appylar">About Appylar</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#ad-types">Ad Types</a>
+    </li>
+    <li><a href="#general-requirements">General Requirements</a></li>
+    <li>
+    <a href="#implementation">Implementation</a>
+     <ul>
+        <li><a href="#add-appylar">Add Appylar</a></li>
+	<li><a href="#setup-the-configuration-for-your-app-and-listeners">Setup the configuration for your App and Listeners</a></li>
+	<li><a href="#implementation-of-banner">Implementation of Banner</a></li>
+	<li><a href="#add-interstitial-ads">Add Interstitial Ads</a></li>   
+      </ul>
+    </li>
+    <li><a href="#sample-codes">Sample Codes</a></li>
+  </ol>
 
-Appylar framework for iOS is a lightweight and easy-to-use Ad integration SDK provided by Appylar. The SDK enables developers to integrate Appylar Ads in any type of iOS application.
+## About Appylar
+Appylar is a lightweight and user-friendly SDK for integrating ads into iOS applications, developed by Appylar. With this SDK, developers can easily integrate Appylar Ads into any type of iOS app
 
-Appylar provides several types of Ads and enables you to place Ads wherever you want in the application.
+### Built With
+ * [Swift](https://docs.swift.org/assets/images/swift.svg)
 
-The Ads provided by Appylar are:
- - Banners
- - Interstitials
+## Ad Types
+Appylar offers multiple ad types and provides developers with the flexibility to place ads anywhere within their application. The ad types available with Appylar are banners and interstitials.
  
 ## General Requirements
- - Minimum targeted version must be iOS 12.0 and later.
- 
-# Step 1: Add Appylar to your project bundle
+ * Appylar requires a minimum targeted version of iOS 12.0 or later.
 
-Make sure `Pods` is available in your project's directory.
-Then import the class in your UIViewController Class
+## Implementation
+To use Appylar Ads in your application, you need to follow these steps. Please note that additional implementation steps may be required based on your specific use case:
+ ### Add Appylar 
 
-```swift
-import UIKit
-import Appylar
-```
+ Before proceeding with Appylar Ads integration, ensure that the Pods directory is available in your project. Once confirmed, you can import the necessary class into your UIViewController class
 
-
-# Step 2: Setup the configuration for your App and Listeners
+ ```swift
+ import UIKit
+ import Appylar
+ ```
 
 
-1. Create an extension of UIViewController(), override its viewDidLoad() method, and implement the `AppylarDelegate` protocol. You can, of course, use your Application subclass if you already have one in your project.
+### Setup the configuration for your App and Listeners
+
+
+1. To implement Appylar Ads in your iOS application, create an extension of UIViewController() and override its viewDidLoad() method. Additionally, implement the AppylarDelegate protocol within this extension. If you already have an application subclass in your project, you can use that instead.
 
 ```swift
 import UIKit
@@ -72,7 +100,7 @@ class ViewController: UIViewController{
 
 ```
 
-3. Another method is available for parameter customization:
+3.To further customize the Appylar Ads, you can use the setParameters() function.
 ```swift
 Override func viewDidLoad(){
    	super.viewDidLoad()  
@@ -86,19 +114,18 @@ Override func viewDidLoad(){
      }
 ```
 
-# Step 3: Add BannerView to the application
+### Implementation of Banner 
 
-1. To integrate the BannerView component in your design prepare a view from storyboard and of BannerView type, prefer below snippet:
-
-   1. Drag a view from library in your viewController.
-   2. At there attribute inspector assign `BannerView` as a class and `Appylar` in module.
-   3. Create there outlet of type BannerView.
+1. To integrate the BannerView component into your design, you need to prepare a view from the storyboard and set it to the BannerView type. Follow these steps:
+  * Drag a view from the library to your UIViewController.
+  * In the Attribute Inspector, set the class to BannerView and the module to Appylar.
+  * Create an outlet of type BannerView in your UIViewController to link it with the storyboard view.
 
 ```swift
 @IBOutlet weak var bannerView: BannerView!
 ```	 
 
-2. Bind component to your activity and implement callback listeners.
+2. Implement callback for banners.
 
 ```swift
 func onNoBanner(){
@@ -117,20 +144,20 @@ func onBannerShown() {
     }
 ```
 
-4. For hiding the banner at the run time:
+4. To hide the banner.
 
 ```swift
    bannerView.hideBanner()
 ```
 
-# Step 4: Add Interstitial to the application
+### Add Interstitial Ads
 
 1. Make your `ViewController` of type `InterstitialViewController`.  
 ```swift
    class ViewController: InterstitialViewController
 ```
 
-2. Implement callback listeners for Interstitial.
+2. Implement callbacks for Interstitial.
 ```swift
 func onNoInterstitial(){
     	//Callback for when there is no Ad to show.  
@@ -150,7 +177,7 @@ if  InterstitialViewController.canShowAd(){
           self.showAd(placement: String ?? "")
 }
 ```
-4. For lock the orientation of interstitial create a file `AppDelegate` and create a structure in it.
+4. For lock the orientation of interstitial in your `AppDelegate` and override a function in it.
 
 ```swift
       func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
@@ -158,7 +185,7 @@ if  InterstitialViewController.canShowAd(){
       }
 ```
 
-# Sample Codes
+## Sample Codes
 
 1. For initialization
 	
