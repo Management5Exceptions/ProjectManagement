@@ -17,6 +17,7 @@
     <li>
     <a href="#implementation">Implementation</a>
      <ul>
+	<li><a href="#pod-installation">Pod Installation</a></li>
         <li><a href="#add-appylar">Add Appylar</a></li>
 	<li><a href="#setup-the-configuration-for-your-app-and-listeners">Setup the configuration for your App and Listeners</a></li>
 	<li><a href="#implementation-of-banner">Implementation of Banner</a></li>
@@ -40,6 +41,22 @@ Appylar offers multiple ad types and provides developers with the flexibility to
 
 ## Implementation
 To use Appylar Ads in your application, you need to follow these steps. Please note that additional implementation steps may be required based on your specific use case:
+ #### Pod Installation
+ Adding Pods to an Xcode project
+ 
+ * Open a terminal window, and $ cd into your project directory.
+ * Create a Podfile. This can be done by running $ pod init.
+ * Add a CocoaPod by specifying pod '$Appylar' on a single line inside your target block.
+     ```     
+     target ‘App Name’ do
+     pod 'Appylar'
+     end
+     ```
+  * Save your Podfile.
+  * Run $ pod install
+  * Open the MyApp.xcworkspace that was created. This should be the file you use everyday to create your app.
+
+ 
  #### Add Appylar 
 
  Before proceeding with Appylar Ads integration, ensure that the Pods directory is available in your project. Once confirmed, you can import the necessary class into your UIViewController class
@@ -50,7 +67,6 @@ To use Appylar Ads in your application, you need to follow these steps. Please n
  ```
 
 <p align="right"><a href="#readme-top">Back To Top</a></p>
-****
 
 #### Setup the configuration for your App and Listeners
 
